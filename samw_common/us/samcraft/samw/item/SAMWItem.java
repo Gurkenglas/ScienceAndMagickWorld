@@ -31,9 +31,12 @@ public class SAMWItem {
 	
 	public static void init() {
 		
-		Gem = new ItemGem(ItemID.GEM_DEFAULT);
-		Mold = new ItemMold(ItemID.MOLD_DEFAULT);
-//		Simptool = new ItemSimpTools(ItemID.SIMPTOOL_DEFAULT);
+		Gem = new ItemGem(ItemID.GEM);
+		Mold = new ItemMold(ItemID.MOLD);
+		Blade = new ItemBlade(ItemID.BLADE);
+		Simptool = new ItemSimpleTool(ItemID.SIMPTOOL);
+		AxeHead = new ItemAxeHead(ItemID.AXEHEAD);
+		
 		
 		MetaItems();
 		LanguageReg();
@@ -52,6 +55,10 @@ public class SAMWItem {
 	}
 
 	private static void MetaItems() {
+		/*Axe Head*/
+		for(int i = 0; i < INames.AXEHEAD_META_NAME.length; i++){
+			LanguageRegistry.addName(new ItemStack(AxeHead, 1, i), INames.AXEHEAD_META_NAME[i]);
+		}
 		/*Gems*/
 		for(int i = 0; i < INames.GEM_META_NAME.length; i++){
 			LanguageRegistry.addName(new ItemStack(Gem, 1, i), INames.GEM_META_NAME[i]);
@@ -60,10 +67,15 @@ public class SAMWItem {
 		for(int i = 0; i < INames.MOLD_META_NAME.length; i++){
 			LanguageRegistry.addName(new ItemStack(Mold, 1, i), INames.MOLD_META_NAME[i]);
 		}
+		/*Blade*/
+		for(int i = 0; i <INames.BLADE_META_NAME.length; i++){
+			LanguageRegistry.addName(new ItemStack(Blade, 1, i), INames.BLADE_META_NAME[i]);
+		}
 		/*Simple Tools*/
-//		for(int i = 0; i <INames.SIMPTOOL_META_NAME.length; i++){
-//			LanguageRegistry.addName(new ItemStack(Simptool, 1, i), INames.MOLD_META_NAME[i]);
-//		}
+		for(int i = 0; i <INames.SIMPTOOL_META_NAME.length; i++){
+			LanguageRegistry.addName(new ItemStack(Simptool, 1, i), INames.SIMPTOOL_META_NAME[i]);			
+		}
+		
 	}
 
 }

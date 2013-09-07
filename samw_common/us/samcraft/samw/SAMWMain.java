@@ -1,6 +1,10 @@
 package us.samcraft.samw;
 
+import java.io.File;
+
+
 import net.minecraft.creativetab.CreativeTabs;
+import us.samcraft.samw.configuration.ConfigurationHandler;
 import us.samcraft.samw.creativetab.CreativeTabWorld;
 import us.samcraft.samw.item.SAMWItem;
 import us.samcraft.samw.lib.Reference;
@@ -31,12 +35,15 @@ public class SAMWMain {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		
+		ConfigurationHandler.init(new File(event.getModConfigurationDirectory().getAbsolutePath() + File.separator + "Science&Magick" + File.separator + "Science&MagickWorld" + ".cfg"));
+		
 		SAMWItem.init();
 		
 	}
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
+		
 		
 	}
 	

@@ -21,10 +21,19 @@ public class ConfigurationHandler {
 		 configuration = new Configuration(configFile);
 		 
 		 try{
-			ItemID.GEM = configuration.getItem(Configuration.CATEGORY_ITEM, INames.GEM, ItemID.GEM_DEFAULT).getInt(); 
+			 
+			configuration.load();
+			 
+			ItemID.GEM = configuration.getItem(Configuration.CATEGORY_ITEM, INames.GEM, ItemID.GEM_DEFAULT).getInt();
+			ItemID.MOLD = configuration.getItem(Configuration.CATEGORY_ITEM, INames.MOLD, ItemID.MOLD_DEFAULT).getInt();
+			ItemID.BLADE = configuration.get(Configuration.CATEGORY_ITEM, INames.BLADE, ItemID.BLADE_DEFAULT).getInt();
+			ItemID.SIMPTOOL = configuration.getItem(Configuration.CATEGORY_ITEM, INames.SIMPTOOL, ItemID.SIMPTOOL_DEFAULT).getInt();
+			ItemID.AXEHEAD = configuration.getItem(Configuration.CATEGORY_ITEM, INames.AXEHEAD, ItemID.AXEHEAD_DEFAULT).getInt();
 			 
 		 }catch(Exception e) {
-			 FMLLog.log(Level.SEVERE, e, Reference.MOD_NAME + "Has had a issue loading its config please");
+			 FMLLog.log(Level.SEVERE, e, "Science&MagickWorld" + "Has had a issue loading its config");
+		 }finally{
+			configuration.save(); 
 		 }
 	 }
 

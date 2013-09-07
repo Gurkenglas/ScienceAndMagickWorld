@@ -1,0 +1,20 @@
+[
+{
+  "modid": "GLASS_SAM",
+  "name": "Science & Magick World",
+  "description": "The core to Science & Magick contains most of its worldgen",
+  "version": "@VERSION@",
+  "url": "",
+  "updateUrl": "https://github.com/SamCraft/ScienceAndMagick",
+  "authorList": [
+    "Glassesofdoom"
+  ],
+  "credits": "By Glassesofdoom",
+  "logoFile": "/mods/samw/textures/logo/logo.png",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
