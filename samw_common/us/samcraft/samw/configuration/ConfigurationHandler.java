@@ -29,6 +29,7 @@ public class ConfigurationHandler {
 			ItemID.BLADE = configuration.get(Configuration.CATEGORY_ITEM, INames.BLADE, ItemID.BLADE_DEFAULT).getInt();
 			ItemID.SIMPTOOL = configuration.getItem(Configuration.CATEGORY_ITEM, INames.SIMPTOOL, ItemID.SIMPTOOL_DEFAULT).getInt();
 			ItemID.AXEHEAD = configuration.getItem(Configuration.CATEGORY_ITEM, INames.AXEHEAD, ItemID.AXEHEAD_DEFAULT).getInt();
+			ItemID.SHOVELHEAD = configuration.getItem(Configuration.CATEGORY_ITEM, INames.SHOVHEAD, ItemID.SHOVELHEAD_DEFAULT).getInt();
 			 
 		 }catch(Exception e) {
 			 FMLLog.log(Level.SEVERE, e, "Science&MagickWorld" + "Has had a issue loading its config");

@@ -31,7 +31,7 @@ public class ItemSimpleTool extends Item{
 	public void registerIcons(IconRegister reg){
 		icons = new Icon[INames.SIMPTOOL_ICONS.length];
 		for (int i = 0; i < icons.length; i++){
-			icons[i] = reg.registerIcon("samw:/parts/simpletool" + INames.SIMPTOOL_ICONS[i]);
+			icons[i] = reg.registerIcon("samw:parts/simpletool/" + INames.SIMPTOOL_ICONS[i]);
 		}
 	}
 	@Override

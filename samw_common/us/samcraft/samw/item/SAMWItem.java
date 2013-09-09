@@ -35,7 +35,7 @@ public class SAMWItem {
 		Mold = new ItemMold(ItemID.MOLD);
 		Blade = new ItemBlade(ItemID.BLADE);
 		Simptool = new ItemSimpleTool(ItemID.SIMPTOOL);
-		AxeHead = new ItemAxeHead(ItemID.AXEHEAD);
+//		AxeHead = new ItemAxeHead(ItemID.AXEHEAD);
 		
 		
 		MetaItems();
@@ -56,9 +56,9 @@ public class SAMWItem {
 
 	private static void MetaItems() {
 		/*Axe Head*/
-		for(int i = 0; i < INames.AXEHEAD_META_NAME.length; i++){
-			LanguageRegistry.addName(new ItemStack(AxeHead, 1, i), INames.AXEHEAD_META_NAME[i]);
-		}
+//		for(int i = 0; i < INames.AXEHEAD_META_NAME.length; i++){
+//			LanguageRegistry.addName(new ItemStack(AxeHead, 1, i), INames.AXEHEAD_META_NAME[i]);
+//		}
 		/*Gems*/
 		for(int i = 0; i < INames.GEM_META_NAME.length; i++){
 			LanguageRegistry.addName(new ItemStack(Gem, 1, i), INames.GEM_META_NAME[i]);
