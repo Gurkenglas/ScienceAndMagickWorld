@@ -1,0 +1,12 @@
+Goals:
+	Ore block ids completely metadata- 0% done
+	Ingot id completely metadata- 0% done
+	Most utility blocks in Metadata(i.e. wood, leaves, etc)- 0% done
+	Get fluids made- 0%
+	Create basic survival items- 5%
+	Create plants/foods- 0%
+	Get mobs modeled- 0%
+	Ore genoration- 0%
+	Tree genoration- 0%
+	Naturally spawning mobs- 0%
+	
