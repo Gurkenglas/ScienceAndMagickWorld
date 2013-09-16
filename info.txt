@@ -1,0 +1,2 @@
+Science and Magick world is the core to all Science and Magick mods. You will need this mod to run any other of the Science and Magick
+Mods as most WorldGen is located in this mod.
