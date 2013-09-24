@@ -1,4 +1,4 @@
-<project name = "ScienceAndMagickWord" default="main">
+<project name = "ScienceAndMagickWorld" default="main">
         
         <property environment="env"/>
         <!-- Properties -->
