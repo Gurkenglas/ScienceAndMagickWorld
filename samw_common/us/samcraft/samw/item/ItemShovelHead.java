@@ -22,14 +22,23 @@ public class ItemShovelHead extends Item {
 		this.setCreativeTab(SAMWMain.tabsamw);
 		this.setHasSubtypes(true);
 	}
+	@Override
+	public String getUnlocalizedName(ItemStack itemstack) {
+		return ITNames.SHOVHEAD + itemstack.getItemDamage();
+	}
 
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister reg) {
 		icons = new Icon[ITNames.SHOVEL_ICONS.length];
 		for (int i = 0; i < icons.length; i++) {
-			icons[i] = reg.registerIcon("samw:" + ITNames.MOLD_ICONS[i]);
+			icons[i] = reg.registerIcon("samw:parts/shovel/" + ITNames.MOLD_ICONS[i]);
 		}
+	}
+	@Override
+	@SideOnly(Side.CLIENT)
+	public Icon getIconFromDamage(int dmg) {
+		return icons[dmg];
 	}
 
 	@Override

@@ -28,8 +28,8 @@ public class ITNames {
 	public static final String PAXHEAD_ICONS[] = {"AdamantiumPickaxeHead", "BronzePickaxeHead", "CopperPickaxeHead", "ManaPickaxeHead", "MithrilPickaxeHead", "RunePickaxeHead", "SilverPickaxeHead", "StarSteelPickaxeHead", "SteelPickaxeHead", "EmeraldPickaxeHead"};
 	
 	public static final String SHOVHEAD = "Shovel Heads";
-	public static final String SHOVHEAD_META_NAME[] = {"",""};
-	public static final String SHOVEL_ICONS[] = {"",""};
+	public static final String SHOVHEAD_META_NAME[] = {"Adamantium Shovel Head", "Bronze Shovel Head"};
+	public static final String SHOVEL_ICONS[] = {"AdamantiumShovelHead", "BronzeShovelHead"};
 	
 	public static final String crysAetheriumshard = "Aetherium Crystle Shard";
 	public static final String crysMana ="Mana Crystle";
