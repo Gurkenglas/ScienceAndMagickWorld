@@ -24,8 +24,8 @@ public class ITNames {
 	public static final String BLADE_ICONS[] = {"AdamantiumBlade", "BronzeBlade", "CopperBlade", "ManaBlade", "MithrilBlade", "RuneBlade", "StarSteelBlade", "SteelBlade"};
 	
 	public static final String PAXEHEAD = "Pickaxe Heads";
-	public static final String PAXEHEAD_META_NAME[] = {"Adamantium Pickaxe Head", "Bronze Pickaxe Head", "Copper Pickaxe Head", "Mana Pickaxe Head", "Mithril Pickaxe Head", "Orichalcum Pickaxe Head", "Rune Pickaxe Head", "Silver Pickaxe Head", "StarSteel Pickaxe Head", "Steel Pickaxe Head", "Emerald Pickaxe Head"};
-	public static final String PAXHEAD_ICONS[] = {"AdamantiumPickaxeHead", "BronzePickaxeHead", "CopperPickaxeHead", "ManaPickaxeHead", "MithrilPickaxeHead", "OrichalcumPickaxeHead", "RunePickaxeHead", "SilverPickaxeHead", "StarSteelPickaxeHead", "SteelPickaxeHead", "EmeraldPickaxeHead"};
+	public static final String PAXEHEAD_META_NAME[] = {"Adamantium Pickaxe Head", "Bronze Pickaxe Head", "Copper Pickaxe Head", "Mana Pickaxe Head", "Mithril Pickaxe Head", "Rune Pickaxe Head", "Silver Pickaxe Head", "StarSteel Pickaxe Head", "Steel Pickaxe Head", "Emerald Pickaxe Head"};
+	public static final String PAXHEAD_ICONS[] = {"AdamantiumPickaxeHead", "BronzePickaxeHead", "CopperPickaxeHead", "ManaPickaxeHead", "MithrilPickaxeHead", "RunePickaxeHead", "SilverPickaxeHead", "StarSteelPickaxeHead", "SteelPickaxeHead", "EmeraldPickaxeHead"};
 	
 	public static final String SHOVHEAD = "Shovel Heads";
 	public static final String SHOVHEAD_META_NAME[] = {"",""};

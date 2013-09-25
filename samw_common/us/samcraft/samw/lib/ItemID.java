@@ -20,7 +20,7 @@ public class ItemID {
 	public static int STARSTEEL_INGOR_DEFAULT = 4514;
 	public static int STEEL_INGOT_DEFAULT = 4515;
 	public static int TITANIUM_INGOT_DEFAULT = 4516;
-	public static int PICKAXE_DEFAULT = 4517;
+	public static int PICKAXEHEAD_DEFAULT = 4517;
 
 	/* Current Item IDs */
 	public static int GEM;
@@ -29,5 +29,5 @@ public class ItemID {
 	public static int AXEHEAD;
 	public static int BLADE;
 	public static int SHOVELHEAD;
-	public static int PICKAXE;
+	public static int PICKAXEHEAD;
 }

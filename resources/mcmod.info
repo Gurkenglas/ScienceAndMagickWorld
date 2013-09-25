@@ -1,6 +1,6 @@
 [
 {
-  "modid": "GLASS_SAM",
+  "modid": "samw",
   "name": "Science & Magick World",
   "description": "The core to Science & Magick contains most of its worldgen",
   "version": "@VERSION@",
