@@ -15,7 +15,7 @@ public class ConfigurationHandler {
 	
 	public static final String CATEGORY_INGOT = "Ingots";
 	
-	 public static void init(File configFile) {
+	public static void init(File configFile) {
 		 
 		 configuration = new Configuration(configFile);
 		 
