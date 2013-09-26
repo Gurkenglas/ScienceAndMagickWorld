@@ -14,7 +14,7 @@ public class ItemAdamantiumIngot extends Item {
 	}
 	@Override
 	public void registerIcons(IconRegister reg) {
-		this.itemIcon = reg.registerIcon("samw:/ingots/" + "AdamantiumIngot");
+		this.itemIcon = reg.registerIcon("samw:ingots/" + "AdamantiumIngot");
 	}
 
 }
