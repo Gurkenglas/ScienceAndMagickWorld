@@ -4,6 +4,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import us.samcraft.samw.lib.ITNames;
 import us.samcraft.samw.lib.ItemID;
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class SAMWItem {
@@ -32,6 +33,7 @@ public class SAMWItem {
 
 	public static void init() {
 
+		/*meta Items*/
 		Gem = new ItemGem(ItemID.GEM);
 		Mold = new ItemMold(ItemID.MOLD);
 		Blade = new ItemBlade(ItemID.BLADE);
@@ -39,21 +41,55 @@ public class SAMWItem {
 		AxeHead = new ItemAxeHead(ItemID.AXEHEAD);
 		PickaxeHead = new ItemPickAxeHead(ItemID.PICKAXEHEAD);
 		ShovelHead = new ItemShovelHead(ItemID.SHOVELHEAD);
+		
+		/*Regular items*/
+		AdamantiumIngot = new ItemAdamantiumIngot(ItemID.ADAMANTIUM_INGOT);
+		BronzeIngot = new ItemBronzeIngot(ItemID.BRONZE_INGOT);
+		CopperIngot = new ItemCopperIngot(ItemID.COPPER_INGOT);
+		ManaIngot = new ItemManaIngot(ItemID.MANA_INGOT);
+		MithrilIngot = new ItemMithrilIngot(ItemID.MITHRIL_INGOT);
+		OrichalcumIngot = new ItemOrichalcumIngot(ItemID.ORICHALCUM_INGOT);
+		RuneIngot = new ItemRuneIngot(ItemID.RUNE_INGOT);
+		SiliconIngot = new ItemSiliconIngot(ItemID.SILICON_INGOT);
+		SilverIngot = new ItemSilverIngot(ItemID.SILVER_INGOT);
+		StarSteelIngot = new ItemStarSteelIngot(ItemID.STARSTEEL_INGOT);
+		SteelIngot = new ItemSteelIngot(ItemID.STEEL_INGOT);
+		TitaniumIngot = new ItemTitaniumIngot(ItemID.TITANIUM_INGOT);
 
 		MetaItems();
 		LanguageReg();
 		GameReg();
-
+		
 	}
 
 	private static void GameReg() {
-		// TODO Auto-generated method stub
+		GameRegistry.registerItem(AdamantiumIngot, ITNames.AdamantiumIngot);
+		GameRegistry.registerItem(BronzeIngot, ITNames.BronzeIngot);
+		GameRegistry.registerItem(CopperIngot, ITNames.CopperIngot);
+		GameRegistry.registerItem(ManaIngot, ITNames.ManaIngot);
+		GameRegistry.registerItem(MithrilIngot, ITNames.MithrilIngot);
+		GameRegistry.registerItem(RuneIngot, ITNames.RuneIngot);
+		GameRegistry.registerItem(SiliconIngot, ITNames.SiliconIngot);
+		GameRegistry.registerItem(SilverIngot, ITNames.SiliverIngot);
+		GameRegistry.registerItem(StarSteelIngot, ITNames.StartSteelIngot);		
+		GameRegistry.registerItem(SteelIngot, ITNames.SteelIngot);
+		GameRegistry.registerItem(TitaniumIngot, ITNames.TitaniumIngot);
 
 	}
 
 	private static void LanguageReg() {
-		// TODO Auto-generated method stub
-
+		LanguageRegistry.addName(AdamantiumIngot, ITNames.AdamantiumIngot);
+		LanguageRegistry.addName(BronzeIngot, ITNames.BronzeIngot);
+		LanguageRegistry.addName(CopperIngot, ITNames.CopperIngot);
+		LanguageRegistry.addName(ManaIngot, ITNames.ManaIngot);
+		LanguageRegistry.addName(MithrilIngot, ITNames.MithrilIngot);
+		LanguageRegistry.addName(RuneIngot, ITNames.RuneIngot);
+		LanguageRegistry.addName(SiliconIngot, ITNames.SiliconIngot);
+		LanguageRegistry.addName(SilverIngot, ITNames.SiliverIngot);
+		LanguageRegistry.addName(StarSteelIngot, ITNames.StartSteelIngot);
+		LanguageRegistry.addName(SteelIngot, ITNames.SteelIngot);
+		LanguageRegistry.addName(TitaniumIngot, ITNames.TitaniumIngot);
+		
 	}
 
 	private static void MetaItems() {
