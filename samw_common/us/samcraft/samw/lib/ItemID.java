@@ -20,8 +20,9 @@ public class ItemID {
 	public static int STARSTEEL_INGOT_DEFAULT = 4514;
 	public static int STEEL_INGOT_DEFAULT = 4515;
 	public static int TITANIUM_INGOT_DEFAULT = 4516;
-	public static int PICKAXEHEAD_DEFAULT = 4517;
-	public static int SILICON_INGOT_DEFAULT = 4518;
+	public static int SILICON_INGOT_DEFAULT = 4517;
+	public static int PICKAXEHEAD_DEFAULT = 4518;
+
 
 	/* Current Item IDs */
 	public static int GEM;

@@ -2,6 +2,7 @@ package us.samcraft.samw.item;
 
 import us.samcraft.samw.SAMWMain;
 import us.samcraft.samw.lib.ITNames;
+import us.samcraft.samw.lib.textures.ModItemIcons;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.Item;
 
@@ -14,7 +15,7 @@ public class ItemTitaniumIngot extends Item {
 	}
 	@Override
 	public void registerIcons(IconRegister reg) {
-		this.itemIcon = reg.registerIcon("samw:/ingots/" + "TitaniumIngot");
+		this.itemIcon = reg.registerIcon(ModItemIcons.TitaniumIngot);
 	}
 
 }
