@@ -6,6 +6,7 @@ import java.util.logging.Level;
 import net.minecraftforge.common.Configuration;
 import us.samcraft.samw.lib.ITNames;
 import us.samcraft.samw.lib.ItemID;
+import us.samcraft.samw.lib.Reference;
 import cpw.mods.fml.common.FMLLog;
 
 
@@ -48,7 +49,7 @@ public class ConfigurationHandler {
 			ItemID.TITANIUM_INGOT = configuration.getItem(CATEGORY_INGOT, ITNames.TitaniumIngot, ItemID.TITANIUM_INGOT_DEFAULT).getInt() - 256;
 			 
 		 }catch(Exception e) {
-			 FMLLog.log(Level.SEVERE, e, "Science&MagickWorld" + "Has had a issue loading its config");
+			 FMLLog.log(Level.SEVERE, e, Reference.MOD_NAME + " Has had a issue loading its config");
 		 }finally{
 			configuration.save(); 
 		 }
