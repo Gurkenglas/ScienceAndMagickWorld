@@ -15,5 +15,13 @@ public class BlockID {
 
 	/* Current Ids */
 	public static int LOG;
+	public static int ADAMANTUM_ORE;
+	public static int COPPER_ORE;
+	public static int MITHRIL_ORE;
+	public static int ORICHALCUM_ORE;
+	public static int RUNE_ORE;
+	public static int SILICON_ORE;
+	public static int STARSTEEL_ORE;
+	public static int TITANIUM_ORE;
 
 }
