@@ -9,8 +9,10 @@ public class BlockID {
 	public static int ORICHALCUM_ORE_DEFAULT = 4603;
 	public static int RUNE_ORE_DEFAULT = 4604;
 	public static int SILICON_ORE_DEFAULT = 4605;
-	public static int STARSTEEL_ORE_DEFAULT = 4606;
-	public static int TITANIUM_ORE_DEFAULT = 4607;
+	public static int SILIVER_ORE_DEFAULT = 4606;
+	public static int STARSTEEL_ORE_DEFAULT = 4607;
+	public static int TITANIUM_ORE_DEFAULT = 4608;
+	public static int WONDERFLONIUM_ORE_DEFAULT = 4609;
 	public static int LOG_DEFAULT = 4800;
 
 	/* Current Ids */
@@ -21,7 +23,9 @@ public class BlockID {
 	public static int ORICHALCUM_ORE;
 	public static int RUNE_ORE;
 	public static int SILICON_ORE;
+	public static int SILIVER_ORE;
 	public static int STARSTEEL_ORE;
 	public static int TITANIUM_ORE;
+	public static int WONDERFLONIUM_ORE;
 
 }
