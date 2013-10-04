@@ -8,6 +8,7 @@ public class ModItemIcons {
 	private static final String MOLD = "samw:molds/";
 	private static final String SIMPLETOOL ="samw:simpletool/";
 	
+	/*Ingots*/
 	public static final String AdamantiumIngot = INGOTS + "AdamantiumIngot";
 	public static final String BronzeIngot = INGOTS + "BronzeIngot";
 	public static final String CopperIngot = INGOTS + "CopperIngot";
