@@ -18,7 +18,7 @@ public class ITNames {
 	public static final String AXEHEAD= "AxeHeads";
 	public static final String AXEHEAD_META_NAME[] = {"Adamantium Axe Head", "Bronze Axe Head", "Copper Axe Head", "Mana Axe Head", "Mithril Axe Head", "Rune Axe Head", "StarSteel Axe Head", "Steel Axe Head"};
 	public static final String AXEHEAD_ICONS[] = {"AdamantiumAxeHead", "BronzeAxeHead", "CopperAxeHead", "ManaAxeHead", "MithrilAxeHead", "RuneAxeHead", "StarSteelAxeHead", "SteelAxeHead"};
-		
+	
 	public static final String BLADE = "Blades";
 	public static final String BLADE_META_NAME[] = {"Adamantium Blade", "Bronze Blade", "Copper Blade", "Mana Blade", "Mithril Blade", "Rune Blade", "StarSteel Blade", "Steel Blade"};
 	public static final String BLADE_ICONS[] = {"AdamantiumBlade", "BronzeBlade", "CopperBlade", "ManaBlade", "MithrilBlade", "RuneBlade", "StarSteelBlade", "SteelBlade"};
