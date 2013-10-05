@@ -34,6 +34,7 @@ public class ITNames {
 	public static final String crysAetheriumshard = "Aetherium Crystle Shard";
 	public static final String crysMana ="Mana Crystle";
 	
+	/*Ingots*/
 	public static final String AdamantiumIngot = "Adamantium Ingot";
 	public static final String BronzeIngot = "Bronze Ingot";
 	public static final String CopperIngot = "Copper Ingot";
