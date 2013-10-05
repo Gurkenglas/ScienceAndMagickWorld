@@ -2,8 +2,8 @@ package us.samcraft.samw;
 
 import java.io.File;
 
-
 import net.minecraft.creativetab.CreativeTabs;
+import us.samcraft.samw.block.SAMWBlock;
 import us.samcraft.samw.configuration.ConfigurationHandler;
 import us.samcraft.samw.creativetab.CreativeTabWorld;
 import us.samcraft.samw.item.SAMWItem;
@@ -37,6 +37,7 @@ public class SAMWMain {
 		
 		ConfigurationHandler.init(new File(event.getModConfigurationDirectory().getAbsolutePath() + File.separator + "Science&Magick" + File.separator + "Science&MagickWorld" + ".cfg"));
 		
+		//SAMWBlock.init();
 		SAMWItem.init();
 		
 	}

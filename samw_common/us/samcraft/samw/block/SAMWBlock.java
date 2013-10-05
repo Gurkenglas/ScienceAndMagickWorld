@@ -27,6 +27,6 @@ public class SAMWBlock {
 		oreSiliver = new BlockoreSiliver(BlockID.SILIVER_ORE_DEFAULT); 
 		oreTitanium = new BlockoreTitanium(BlockID.SILIVER_ORE);
 		oreWonderflonium = new BlockoreWonderflonium(BlockID.WONDERFLONIUM_ORE);
-		// TODO work on blocks 
+		// TODO work more on blocks 
 	}
 }
