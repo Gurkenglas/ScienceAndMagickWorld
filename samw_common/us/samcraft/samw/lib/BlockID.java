@@ -3,17 +3,18 @@ package us.samcraft.samw.lib;
 public class BlockID {
 
 	/* Default Ids */
-	public static int ADAMANTUM_ORE_DEFAULT = 4600;
-	public static int COPPER_ORE_DEFAULT = 4601;
-	public static int MITHRIL_ORE_DEFAULT = 4602;
-	public static int ORICHALCUM_ORE_DEFAULT = 4603;
-	public static int RUNE_ORE_DEFAULT = 4604;
-	public static int SILICON_ORE_DEFAULT = 4605;
-	public static int SILIVER_ORE_DEFAULT = 4606;
-	public static int STARSTEEL_ORE_DEFAULT = 4607;
-	public static int TITANIUM_ORE_DEFAULT = 4608;
-	public static int WONDERFLONIUM_ORE_DEFAULT = 4609;
-	public static int LOG_DEFAULT = 4800;
+	public static int ADAMANTUM_ORE_DEFAULT = 3600;
+	public static int COPPER_ORE_DEFAULT = 3601;
+	public static int MITHRIL_ORE_DEFAULT = 3602;
+	public static int ORICHALCUM_ORE_DEFAULT = 3603;
+	public static int RUNE_ORE_DEFAULT = 3604;
+	public static int SILICON_ORE_DEFAULT = 3605;
+	public static int SILIVER_ORE_DEFAULT = 3606;
+	public static int STARSTEEL_ORE_DEFAULT = 3607;
+	public static int TIN_ORE_DEFAULT = 3608;
+	public static int TITANIUM_ORE_DEFAULT = 3609;
+	public static int WONDERFLONIUM_ORE_DEFAULT = 3610;
+	public static int LOG_DEFAULT = 3800;
 
 	/* Current Ids */
 	public static int LOG;
@@ -25,6 +26,7 @@ public class BlockID {
 	public static int SILICON_ORE;
 	public static int SILIVER_ORE;
 	public static int STARSTEEL_ORE;
+	public static int TIN_ORE;
 	public static int TITANIUM_ORE;
 	public static int WONDERFLONIUM_ORE;
 

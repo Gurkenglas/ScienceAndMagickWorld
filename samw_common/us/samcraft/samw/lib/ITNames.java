@@ -34,14 +34,6 @@ public class ITNames {
 	public static final String crysAetheriumshard = "Aetherium Crystle Shard";
 	public static final String crysMana ="Mana Crystle";
 	
-//	public static final String gemSaphire = "Saphire";
-//	public static final String gemGreensphire = "Green Saphire";
-//	public static final String gemOpal = "Opal";
-//	public static final String gemDarkDiamond = "Dark Diamond";
-//	public static final String gemDarkEmerald = "Dark Emerald";
-//	public static final String gemJade = "Jade";
-//	public static final String gemDarkJade = "Dark Jade";
-	
 	public static final String AdamantiumIngot = "Adamantium Ingot";
 	public static final String BronzeIngot = "Bronze Ingot";
 	public static final String CopperIngot = "Copper Ingot";
@@ -51,7 +43,7 @@ public class ITNames {
 	public static final String RuneIngot = "Rune Ingot";
 	public static final String SiliconIngot = "Silicon Ingot";
 	public static final String SiliverIngot = "Siliver Ingot";
-	public static final String StartSteelIngot = "Star-Steel Ingot";
+	public static final String StartSteelIngot = "StarSteel Ingot";
 	public static final String SteelIngot = "Steel Ingot";
 	public static final String TitaniumIngot = "Titanium Ingot";
 }

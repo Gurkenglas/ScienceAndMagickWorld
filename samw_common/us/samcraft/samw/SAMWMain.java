@@ -37,7 +37,7 @@ public class SAMWMain {
 		
 		ConfigurationHandler.init(new File(event.getModConfigurationDirectory().getAbsolutePath() + File.separator + "Science&Magick" + File.separator + "Science&MagickWorld" + ".cfg"));
 		
-		//SAMWBlock.init();
+		SAMWBlock.init();
 		SAMWItem.init();
 		
 	}

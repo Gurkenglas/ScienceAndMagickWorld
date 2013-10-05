@@ -7,17 +7,17 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 
-public class BlockoreCoppere extends Block {
+public class BlockoreTin extends Block {
 
-	public BlockoreCoppere(int id) {
+	public BlockoreTin(int id) {
 		super(id, Material.rock);
 		this.setCreativeTab(SAMWMain.tabsamw);
-		this.setUnlocalizedName(BNames.oreCopper);
-		this.setHardness(3F);
+		this.setUnlocalizedName(BNames.oreTin);
+		this.setHardness(4F);
 	}
 	@Override
 	public void registerIcons(IconRegister reg) {
-		this.blockIcon = reg.registerIcon(ModBlockIcons.oreCopper);
+		this.blockIcon = reg.registerIcon(ModBlockIcons.oreTin);
 	}
 
 }
