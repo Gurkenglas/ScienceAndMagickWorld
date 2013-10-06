@@ -1,5 +1,7 @@
 package us.samcraft.samw.block;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import us.samcraft.samw.SAMWMain;
 import us.samcraft.samw.lib.BNames;
 import us.samcraft.samw.lib.textures.ModBlockIcons;
@@ -15,6 +17,7 @@ public class BlockoreRune extends Block {
 		this.setUnlocalizedName(BNames.oreRune);
 		this.setHardness(9F);
 	}
+	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerIcons(IconRegister reg) {
 		this.blockIcon = reg.registerIcon(ModBlockIcons.oreRune);
