@@ -18,6 +18,7 @@ public class SAMWBlock {
 	public static Block oreTin;
 	public static Block oreTitanium;
 	public static Block oreWonderflonium;
+	public static Block Leaves;
 	
 	public static void init() {
 		
@@ -32,11 +33,17 @@ public class SAMWBlock {
 		oreTin = new BlockoreTin(BlockID.TIN_ORE);
 		oreTitanium = new BlockoreTitanium(BlockID.SILIVER_ORE);
 		oreWonderflonium = new BlockoreWonderflonium(BlockID.WONDERFLONIUM_ORE);
+		Leaves = new BlockLeaves(BlockID.Leaves_DEFAULT);
 		
 		GameReg();
 		LangReg();
+		MetaBlock();
 	}
 	
+	private static void MetaBlock() {
+		
+	}
+
 	private static void GameReg() {
 		GameRegistry.registerBlock(oreAdamantium, BNames.oreAdamantium);
 		GameRegistry.registerBlock(oreCopper, BNames.oreCopper);
@@ -48,6 +55,7 @@ public class SAMWBlock {
 		GameRegistry.registerBlock(oreTin, BNames.oreTin);
 		GameRegistry.registerBlock(oreTitanium, BNames.oreTitanium);
 		GameRegistry.registerBlock(oreWonderflonium, BNames.oreWonderflonium);
+		GameRegistry.registerBlock(Leaves, BNames.LEAVES);
 		
 	}
 

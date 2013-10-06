@@ -8,6 +8,7 @@ import us.samcraft.samw.SAMWMain;
 import us.samcraft.samw.lib.BNames;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
@@ -20,12 +21,22 @@ public class BlockLeaves extends Block{
 	public BlockLeaves(int id) {
 		super(id, Material.leaves);
 		this.setCreativeTab(SAMWMain.tabsamw);
+		this.setUnlocalizedName(BNames.LEAVES);
 				
 	}
-	
+	@Override
+	public boolean isOpaqueCube(){
+		return true;
+		
+	}
+//	public String getUnlocalizedName(){
+//		return BNames.LEAVES_META_NAMES + itemstack.g;
+		
+//	}
 	public int damageDropped(int dmg){
 		return dmg;
 	}
+	@Override
 	@SideOnly(Side.CLIENT)
 	public void getSubBlocks(int id, CreativeTabs tab, List list){
 		for(int i = 0; i < BNames.LEAVES_META_NAMES.length; i++){
@@ -33,7 +44,14 @@ public class BlockLeaves extends Block{
 			list.add(stack);
 		}
 	}
-	
-	
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void registerIcons(IconRegister reg){
+		icons = new Icon[BNames.LEAVES_ICONS.length];
+		for (int i = 0; i < icons.length; i++){
+			icons[i] = reg.registerIcon("samw:tree/" + BNames.LEAVES_ICONS[i]);
+		}
+		
+	}
 
 }
