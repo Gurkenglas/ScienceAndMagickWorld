@@ -19,6 +19,7 @@ public class ConfigurationHandler {
 	public static final String CATEGORY_INGOT = "Ingots";
 	public static final String CATEGORY_PART = "Parts";
 	public static final String CATAGORY_ORE = "Ores";
+	public static final String CATAGORY_NATUREBLOCK = "Nature";
 	//public static final String CATAGORY_GEM
 	
 	public static void init(File configFile) {
@@ -33,6 +34,7 @@ public class ConfigurationHandler {
 			configuration.addCustomCategoryComment(CATEGORY_INGOT, null);
 			configuration.addCustomCategoryComment(CATEGORY_PART, null);
 			configuration.addCustomCategoryComment(CATAGORY_ORE, null);
+			configuration.addCustomCategoryComment(CATAGORY_NATUREBLOCK, null);
 			
 			/* Meta Items */ 
 			ItemID.GEM = configuration.getItem(CATEGORY_PART, ITNames.GEM, ItemID.GEM_DEFAULT).getInt() - 256;
@@ -68,6 +70,9 @@ public class ConfigurationHandler {
 			BlockID.TIN_ORE = configuration.getBlock(CATAGORY_ORE, BNames.oreTin, BlockID.TIN_ORE_DEFAULT).getInt() - 256;
 			BlockID.TITANIUM_ORE = configuration.getBlock(CATAGORY_ORE, BNames.oreTitanium, BlockID.TITANIUM_ORE_DEFAULT).getInt() - 256;
 			BlockID.WONDERFLONIUM_ORE = configuration.getBlock(CATAGORY_ORE, BNames.oreWonderflonium, BlockID.WONDERFLONIUM_ORE_DEFAULT).getInt() -256;
+			
+			/* Nature blocks*/
+			BlockID.LEAVES = configuration.getBlock(CATAGORY_NATUREBLOCK, BNames.LEAVES, BlockID.LEAVES_DEFAULT).getInt() - 256;
 			 
 		 }catch(Exception e) {
 			 FMLLog.log(Level.SEVERE, e, Reference.MOD_NAME + " Has had a issue loading its config");

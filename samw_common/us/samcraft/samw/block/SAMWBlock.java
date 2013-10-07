@@ -33,7 +33,7 @@ public class SAMWBlock {
 		oreTin = new BlockoreTin(BlockID.TIN_ORE);
 		oreTitanium = new BlockoreTitanium(BlockID.SILIVER_ORE);
 		oreWonderflonium = new BlockoreWonderflonium(BlockID.WONDERFLONIUM_ORE);
-		Leaves = new BlockLeaves(BlockID.Leaves_DEFAULT);
+		Leaves = new BlockLeaves(BlockID.LEAVES);
 		
 		GameReg();
 		LangReg();

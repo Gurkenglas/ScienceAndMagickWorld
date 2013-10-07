@@ -15,7 +15,7 @@ public class BlockID {
 	public static int TITANIUM_ORE_DEFAULT = 3609;
 	public static int WONDERFLONIUM_ORE_DEFAULT = 3610;
 	public static int LOG_DEFAULT = 3800;
-	public static int Leaves_DEFAULT = 3801;
+	public static int LEAVES_DEFAULT = 3801;
 
 	/* Current Ids */
 	public static int LOG;
@@ -30,6 +30,6 @@ public class BlockID {
 	public static int TIN_ORE;
 	public static int TITANIUM_ORE;
 	public static int WONDERFLONIUM_ORE;
-	public static int Leaves;
+	public static int LEAVES;
 
 }
