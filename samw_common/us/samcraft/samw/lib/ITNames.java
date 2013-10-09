@@ -46,5 +46,6 @@ public class ITNames {
 	public static final String SiliverIngot = "Siliver Ingot";
 	public static final String StartSteelIngot = "StarSteel Ingot";
 	public static final String SteelIngot = "Steel Ingot";
+	public static final String TinIngot = "Tin Ingot";
 	public static final String TitaniumIngot = "Titanium Ingot";
 }

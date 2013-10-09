@@ -20,7 +20,7 @@ public class ConfigurationHandler {
 	public static final String CATEGORY_PART = "Parts";
 	public static final String CATAGORY_ORE = "Ores";
 	public static final String CATAGORY_NATUREBLOCK = "Nature";
-	//public static final String CATAGORY_GEM
+	public static final String CATAGORY_GEM = "Gems";
 	
 	public static void init(File configFile) {
 		 
@@ -35,6 +35,7 @@ public class ConfigurationHandler {
 			configuration.addCustomCategoryComment(CATEGORY_PART, null);
 			configuration.addCustomCategoryComment(CATAGORY_ORE, null);
 			configuration.addCustomCategoryComment(CATAGORY_NATUREBLOCK, null);
+			configuration.addCustomCategoryComment(CATAGORY_GEM, null);
 			
 			/* Meta Items */ 
 			ItemID.GEM = configuration.getItem(CATEGORY_PART, ITNames.GEM, ItemID.GEM_DEFAULT).getInt() - 256;
@@ -58,10 +59,11 @@ public class ConfigurationHandler {
 			ItemID.STARSTEEL_INGOT = configuration.getItem(CATEGORY_INGOT, ITNames.StartSteelIngot, ItemID.STARSTEEL_INGOT_DEFAULT).getInt() - 256;
 			ItemID.STEEL_INGOT = configuration.getItem(CATEGORY_INGOT, ITNames.StartSteelIngot, ItemID.STEEL_INGOT_DEFAULT).getInt() - 256;
 			ItemID.TITANIUM_INGOT = configuration.getItem(CATEGORY_INGOT, ITNames.TitaniumIngot, ItemID.TITANIUM_INGOT_DEFAULT).getInt() - 256;
+			ItemID.TIN_INGOT = configuration.getItem(CATEGORY_INGOT, ITNames.TinIngot, ItemID.TIN_INGOT_DEFAULT).getInt() - 256;
 			
 			/* Blocks */
 			BlockID.ADAMANTUM_ORE = configuration.getBlock(CATAGORY_ORE, BNames.oreAdamantium, BlockID.ADAMANTUM_ORE_DEFAULT).getInt() - 256;
-		    BlockID.COPPER_ORE = configuration.getBlock(CATAGORY_ORE, BNames.oreCopper, BlockID.COPPER_ORE_DEFAULT).getInt() - 256;
+			BlockID.COPPER_ORE = configuration.getBlock(CATAGORY_ORE, BNames.oreCopper, BlockID.COPPER_ORE_DEFAULT).getInt() - 256;
 			BlockID.MITHRIL_ORE = configuration.getBlock(CATAGORY_ORE, BNames.oreMithril, BlockID.MITHRIL_ORE_DEFAULT).getInt() - 256;
 			BlockID.ORICHALCUM_ORE = configuration.getBlock(CATAGORY_ORE, BNames.oreOrichalcum, BlockID.ORICHALCUM_ORE_DEFAULT).getInt() - 256;
 			BlockID.RUNE_ORE = configuration.getBlock(CATAGORY_ORE, BNames.oreRune, BlockID.RUNE_ORE_DEFAULT).getInt() - 256;

@@ -29,6 +29,7 @@ public class SAMWItem {
 	public static Item SilverIngot;
 	public static Item StarSteelIngot;
 	public static Item SteelIngot;
+	public static Item TinIngot;
 	public static Item TitaniumIngot;
 
 	public static void init() {
@@ -54,6 +55,7 @@ public class SAMWItem {
 		SilverIngot = new ItemSilverIngot(ItemID.SILVER_INGOT);
 		StarSteelIngot = new ItemStarSteelIngot(ItemID.STARSTEEL_INGOT);
 		SteelIngot = new ItemSteelIngot(ItemID.STEEL_INGOT);
+		TinIngot = new ItemTinIngot(ItemID.TIN_INGOT);
 		TitaniumIngot = new ItemTitaniumIngot(ItemID.TITANIUM_INGOT);
 
 		MetaItems();
@@ -74,6 +76,7 @@ public class SAMWItem {
 		GameRegistry.registerItem(StarSteelIngot, ITNames.StartSteelIngot);		
 		GameRegistry.registerItem(SteelIngot, ITNames.SteelIngot);
 		GameRegistry.registerItem(TitaniumIngot, ITNames.TitaniumIngot);
+		GameRegistry.registerItem(TinIngot, ITNames.TinIngot);
 
 	}
 
@@ -89,6 +92,7 @@ public class SAMWItem {
 		LanguageRegistry.addName(StarSteelIngot, ITNames.StartSteelIngot);
 		LanguageRegistry.addName(SteelIngot, ITNames.SteelIngot);
 		LanguageRegistry.addName(TitaniumIngot, ITNames.TitaniumIngot);
+		LanguageRegistry.addName(TinIngot, ITNames.TinIngot);
 		
 	}
 

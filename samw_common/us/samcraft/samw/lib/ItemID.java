@@ -19,9 +19,10 @@ public class ItemID {
 	public static int SILVER_INGOT_DEFAULT = 4513;
 	public static int STARSTEEL_INGOT_DEFAULT = 4514;
 	public static int STEEL_INGOT_DEFAULT = 4515;
-	public static int TITANIUM_INGOT_DEFAULT = 4516;
-	public static int SILICON_INGOT_DEFAULT = 4517;
-	public static int PICKAXEHEAD_DEFAULT = 4518;
+	public static int TIN_INGOT_DEFAULT = 4516;
+	public static int TITANIUM_INGOT_DEFAULT = 4517;
+	public static int SILICON_INGOT_DEFAULT = 4518;
+	public static int PICKAXEHEAD_DEFAULT = 4519;
 
 
 	/* Current Item IDs */
@@ -41,6 +42,7 @@ public class ItemID {
 	public static int RUNE_INGOT;
 	public static int SILVER_INGOT;
 	public static int STARSTEEL_INGOT;
+	public static int TIN_INGOT;
 	public static int TITANIUM_INGOT;
 	public static int STEEL_INGOT;
 	public static int SILICON_INGOT;

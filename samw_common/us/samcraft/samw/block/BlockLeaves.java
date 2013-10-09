@@ -29,10 +29,6 @@ public class BlockLeaves extends Block{
 		return true;
 		
 	}
-//	public String getUnlocalizedName(){
-//		return BNames.LEAVES_META_NAMES + itemstack.g;
-		
-//	}
 	public int damageDropped(int dmg){
 		return dmg;
 	}
