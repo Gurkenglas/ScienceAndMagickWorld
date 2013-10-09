@@ -60,7 +60,6 @@ public class SAMWBlock {
 		GameRegistry.registerBlock(oreTitanium, BNames.oreTitanium);
 		GameRegistry.registerBlock(oreWonderflonium, BNames.oreWonderflonium);
 		GameRegistry.registerBlock(Leaves, BNames.LEAVES);
-		//OreDictionary.registerOre(id, ore)
 		
 	}
 
