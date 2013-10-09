@@ -8,6 +8,7 @@ import us.samcraft.samw.block.SAMWBlock;
 import us.samcraft.samw.item.SAMWItem;
 import cpw.mods.fml.common.registry.GameRegistry;
 
+
 /**
  * @author Anthony
  *
