@@ -57,7 +57,7 @@ public class ConfigurationHandler {
 			ItemID.SILICON_INGOT = configuration.getItem(CATEGORY_INGOT, ITNames.SiliconIngot, ItemID.SILICON_INGOT_DEFAULT).getInt() - 256;
 			ItemID.SILVER_INGOT = configuration.getItem(CATEGORY_INGOT, ITNames.SiliverIngot, ItemID.SILVER_INGOT_DEFAULT).getInt() - 256;
 			ItemID.STARSTEEL_INGOT = configuration.getItem(CATEGORY_INGOT, ITNames.StartSteelIngot, ItemID.STARSTEEL_INGOT_DEFAULT).getInt() - 256;
-			ItemID.STEEL_INGOT = configuration.getItem(CATEGORY_INGOT, ITNames.StartSteelIngot, ItemID.STEEL_INGOT_DEFAULT).getInt() - 256;
+			ItemID.STEEL_INGOT = configuration.getItem(CATEGORY_INGOT, ITNames.SteelIngot, ItemID.STEEL_INGOT_DEFAULT).getInt() - 256;
 			ItemID.TITANIUM_INGOT = configuration.getItem(CATEGORY_INGOT, ITNames.TitaniumIngot, ItemID.TITANIUM_INGOT_DEFAULT).getInt() - 256;
 			ItemID.TIN_INGOT = configuration.getItem(CATEGORY_INGOT, ITNames.TinIngot, ItemID.TIN_INGOT_DEFAULT).getInt() - 256;
 			
