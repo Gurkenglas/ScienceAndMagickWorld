@@ -3,8 +3,8 @@ package us.samcraft.samw.block;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import us.samcraft.samw.crafting.DictionaryOres;
-import us.samcraft.samw.lib.BNames;
-import us.samcraft.samw.lib.BlockID;
+import us.samcraft.samw.lib.SAMWBNames;
+import us.samcraft.samw.lib.SAMWBlockID;
 import net.minecraft.block.Block;
 
 public class SAMWBlock {
@@ -24,17 +24,17 @@ public class SAMWBlock {
 	public static void init() {
 		
 		/*Ores*/
-		oreAdamantium = new BlockoreAdamantium(BlockID.ADAMANTUM_ORE);
-		oreCopper = new BlockoreCopper(BlockID.COPPER_ORE);
-		oreMithril = new BlockoreMithril(BlockID.MITHRIL_ORE);
-		oreOrichalcum = new BlockoreOrichalcum(BlockID.ORICHALCUM_ORE);
-		oreRune = new BlockoreRune(BlockID.RUNE_ORE);
-		oreSilicon = new BlockoreSilicon(BlockID.SILICON_ORE);
-		oreSiliver = new BlockoreSiliver(BlockID.SILIVER_ORE_DEFAULT); 
-		oreTin = new BlockoreTin(BlockID.TIN_ORE);
-		oreTitanium = new BlockoreTitanium(BlockID.SILIVER_ORE);
-		oreWonderflonium = new BlockoreWonderflonium(BlockID.WONDERFLONIUM_ORE);
-		Leaves = new BlockLeaves(BlockID.LEAVES);
+		oreAdamantium = new BlockoreAdamantium(SAMWBlockID.ADAMANTUM_ORE);
+		oreCopper = new BlockoreCopper(SAMWBlockID.COPPER_ORE);
+		oreMithril = new BlockoreMithril(SAMWBlockID.MITHRIL_ORE);
+		oreOrichalcum = new BlockoreOrichalcum(SAMWBlockID.ORICHALCUM_ORE);
+		oreRune = new BlockoreRune(SAMWBlockID.RUNE_ORE);
+		oreSilicon = new BlockoreSilicon(SAMWBlockID.SILICON_ORE);
+		oreSiliver = new BlockoreSiliver(SAMWBlockID.SILIVER_ORE_DEFAULT); 
+		oreTin = new BlockoreTin(SAMWBlockID.TIN_ORE);
+		oreTitanium = new BlockoreTitanium(SAMWBlockID.SILIVER_ORE);
+		oreWonderflonium = new BlockoreWonderflonium(SAMWBlockID.WONDERFLONIUM_ORE);
+		Leaves = new BlockLeaves(SAMWBlockID.LEAVES);
 		
 		GameReg();
 		LangReg();
@@ -49,31 +49,31 @@ public class SAMWBlock {
 	}
 
 	private static void GameReg() {
-		GameRegistry.registerBlock(oreAdamantium, BNames.oreAdamantium);
-		GameRegistry.registerBlock(oreCopper, BNames.oreCopper);
-		GameRegistry.registerBlock(oreMithril, BNames.oreMithril);
-		GameRegistry.registerBlock(oreOrichalcum, BNames.oreOrichalcum);
-		GameRegistry.registerBlock(oreRune, BNames.oreRune);
-		GameRegistry.registerBlock(oreSilicon, BNames.oreSilicon);
-		GameRegistry.registerBlock(oreSiliver, BNames.oreSilver);
-		GameRegistry.registerBlock(oreTin, BNames.oreTin);
-		GameRegistry.registerBlock(oreTitanium, BNames.oreTitanium);
-		GameRegistry.registerBlock(oreWonderflonium, BNames.oreWonderflonium);
-		GameRegistry.registerBlock(Leaves, BNames.LEAVES);
+		GameRegistry.registerBlock(oreAdamantium, SAMWBNames.oreAdamantium);
+		GameRegistry.registerBlock(oreCopper, SAMWBNames.oreCopper);
+		GameRegistry.registerBlock(oreMithril, SAMWBNames.oreMithril);
+		GameRegistry.registerBlock(oreOrichalcum, SAMWBNames.oreOrichalcum);
+		GameRegistry.registerBlock(oreRune, SAMWBNames.oreRune);
+		GameRegistry.registerBlock(oreSilicon, SAMWBNames.oreSilicon);
+		GameRegistry.registerBlock(oreSiliver, SAMWBNames.oreSilver);
+		GameRegistry.registerBlock(oreTin, SAMWBNames.oreTin);
+		GameRegistry.registerBlock(oreTitanium, SAMWBNames.oreTitanium);
+		GameRegistry.registerBlock(oreWonderflonium, SAMWBNames.oreWonderflonium);
+		GameRegistry.registerBlock(Leaves, SAMWBNames.LEAVES);
 		
 	}
 
 	private static void LangReg() {
-		LanguageRegistry.addName(oreAdamantium, BNames.oreAdamantium);
-		LanguageRegistry.addName(oreCopper, BNames.oreCopper);
-		LanguageRegistry.addName(oreMithril, BNames.oreMithril);
-		LanguageRegistry.addName(oreOrichalcum, BNames.oreOrichalcum);
-		LanguageRegistry.addName(oreRune, BNames.oreRune);
-		LanguageRegistry.addName(oreSilicon, BNames.oreSilicon);
-		LanguageRegistry.addName(oreSiliver, BNames.oreSilver);
-		LanguageRegistry.addName(oreTin, BNames.oreTin);
-		LanguageRegistry.addName(oreTitanium, BNames.oreTitanium);
-		LanguageRegistry.addName(oreWonderflonium, BNames.oreWonderflonium);
+		LanguageRegistry.addName(oreAdamantium, SAMWBNames.oreAdamantium);
+		LanguageRegistry.addName(oreCopper, SAMWBNames.oreCopper);
+		LanguageRegistry.addName(oreMithril, SAMWBNames.oreMithril);
+		LanguageRegistry.addName(oreOrichalcum, SAMWBNames.oreOrichalcum);
+		LanguageRegistry.addName(oreRune, SAMWBNames.oreRune);
+		LanguageRegistry.addName(oreSilicon, SAMWBNames.oreSilicon);
+		LanguageRegistry.addName(oreSiliver, SAMWBNames.oreSilver);
+		LanguageRegistry.addName(oreTin, SAMWBNames.oreTin);
+		LanguageRegistry.addName(oreTitanium, SAMWBNames.oreTitanium);
+		LanguageRegistry.addName(oreWonderflonium, SAMWBNames.oreWonderflonium);
 		
 	}
 

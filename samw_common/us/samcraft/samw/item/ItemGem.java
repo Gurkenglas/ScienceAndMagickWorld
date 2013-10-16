@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
 import us.samcraft.samw.SAMWMain;
-import us.samcraft.samw.lib.ITNames;
+import us.samcraft.samw.lib.SAMWINames;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -25,15 +25,15 @@ public class ItemGem extends Item {
 
 	@Override
 	public String getUnlocalizedName(ItemStack itemstack) {
-		return ITNames.GEM + itemstack.getItemDamage();
+		return SAMWINames.GEM + itemstack.getItemDamage();
 	}
 
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister reg) {
-		icons = new Icon[ITNames.GEM_ICONS.length];
+		icons = new Icon[SAMWINames.GEM_ICONS.length];
 		for (int i = 0; i < icons.length; i++) {
-			icons[i] = reg.registerIcon("samw:" + ITNames.GEM_ICONS[i]);
+			icons[i] = reg.registerIcon("samw:" + SAMWINames.GEM_ICONS[i]);
 		}
 	}
 
@@ -47,7 +47,7 @@ public class ItemGem extends Item {
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void getSubItems(int id, CreativeTabs tab, List list) {
-		for (int i = 0; i < ITNames.GEM_META_NAME.length; i++) {
+		for (int i = 0; i < SAMWINames.GEM_META_NAME.length; i++) {
 			ItemStack stack = new ItemStack(id, 1, i);
 			list.add(stack);
 		}

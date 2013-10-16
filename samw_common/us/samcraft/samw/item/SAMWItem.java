@@ -2,8 +2,8 @@ package us.samcraft.samw.item;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import us.samcraft.samw.lib.ITNames;
-import us.samcraft.samw.lib.ItemID;
+import us.samcraft.samw.lib.SAMWINames;
+import us.samcraft.samw.lib.SAMWItemID;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -35,28 +35,28 @@ public class SAMWItem {
 	public static void init() {
 
 		/*meta Items*/
-		Gem = new ItemGem(ItemID.GEM);
-		Mold = new ItemMold(ItemID.MOLD);
-		Blade = new ItemBlade(ItemID.BLADE);
-		Simptool = new ItemSimpleTool(ItemID.SIMPTOOL);
-		AxeHead = new ItemAxeHead(ItemID.AXEHEAD);
-		PickaxeHead = new ItemPickAxeHead(ItemID.PICKAXEHEAD);
-		ShovelHead = new ItemShovelHead(ItemID.SHOVELHEAD);
+		Gem = new ItemGem(SAMWItemID.GEM);
+		Mold = new ItemMold(SAMWItemID.MOLD);
+		Blade = new ItemBlade(SAMWItemID.BLADE);
+		Simptool = new ItemSimpleTool(SAMWItemID.SIMPTOOL);
+		AxeHead = new ItemAxeHead(SAMWItemID.AXEHEAD);
+		PickaxeHead = new ItemPickAxeHead(SAMWItemID.PICKAXEHEAD);
+		ShovelHead = new ItemShovelHead(SAMWItemID.SHOVELHEAD);
 		
 		/*Regular items*/
-		AdamantiumIngot = new ItemAdamantiumIngot(ItemID.ADAMANTIUM_INGOT);
-		BronzeIngot = new ItemBronzeIngot(ItemID.BRONZE_INGOT);
-		CopperIngot = new ItemCopperIngot(ItemID.COPPER_INGOT);
-		ManaIngot = new ItemManaIngot(ItemID.MANA_INGOT);
-		MithrilIngot = new ItemMithrilIngot(ItemID.MITHRIL_INGOT);
-		OrichalcumIngot = new ItemOrichalcumIngot(ItemID.ORICHALCUM_INGOT);
-		RuneIngot = new ItemRuneIngot(ItemID.RUNE_INGOT);
-		SiliconIngot = new ItemSiliconIngot(ItemID.SILICON_INGOT);
-		SilverIngot = new ItemSilverIngot(ItemID.SILVER_INGOT);
-		StarSteelIngot = new ItemStarSteelIngot(ItemID.STARSTEEL_INGOT);
-		SteelIngot = new ItemSteelIngot(ItemID.STEEL_INGOT);
-		TinIngot = new ItemTinIngot(ItemID.TIN_INGOT);
-		TitaniumIngot = new ItemTitaniumIngot(ItemID.TITANIUM_INGOT);
+		AdamantiumIngot = new ItemAdamantiumIngot(SAMWItemID.ADAMANTIUM_INGOT);
+		BronzeIngot = new ItemBronzeIngot(SAMWItemID.BRONZE_INGOT);
+		CopperIngot = new ItemCopperIngot(SAMWItemID.COPPER_INGOT);
+		ManaIngot = new ItemManaIngot(SAMWItemID.MANA_INGOT);
+		MithrilIngot = new ItemMithrilIngot(SAMWItemID.MITHRIL_INGOT);
+		OrichalcumIngot = new ItemOrichalcumIngot(SAMWItemID.ORICHALCUM_INGOT);
+		RuneIngot = new ItemRuneIngot(SAMWItemID.RUNE_INGOT);
+		SiliconIngot = new ItemSiliconIngot(SAMWItemID.SILICON_INGOT);
+		SilverIngot = new ItemSilverIngot(SAMWItemID.SILVER_INGOT);
+		StarSteelIngot = new ItemStarSteelIngot(SAMWItemID.STARSTEEL_INGOT);
+		SteelIngot = new ItemSteelIngot(SAMWItemID.STEEL_INGOT);
+		TinIngot = new ItemTinIngot(SAMWItemID.TIN_INGOT);
+		TitaniumIngot = new ItemTitaniumIngot(SAMWItemID.TITANIUM_INGOT);
 
 		MetaItems();
 		LanguageReg();
@@ -65,65 +65,65 @@ public class SAMWItem {
 	}
 
 	private static void GameReg() {
-		GameRegistry.registerItem(AdamantiumIngot, ITNames.AdamantiumIngot);
-		GameRegistry.registerItem(BronzeIngot, ITNames.BronzeIngot);
-		GameRegistry.registerItem(CopperIngot, ITNames.CopperIngot);
-		GameRegistry.registerItem(ManaIngot, ITNames.ManaIngot);
-		GameRegistry.registerItem(MithrilIngot, ITNames.MithrilIngot);
-		GameRegistry.registerItem(RuneIngot, ITNames.RuneIngot);
-		GameRegistry.registerItem(SiliconIngot, ITNames.SiliconIngot);
-		GameRegistry.registerItem(SilverIngot, ITNames.SiliverIngot);
-		GameRegistry.registerItem(StarSteelIngot, ITNames.StartSteelIngot);		
-		GameRegistry.registerItem(SteelIngot, ITNames.SteelIngot);
-		GameRegistry.registerItem(TitaniumIngot, ITNames.TitaniumIngot);
-		GameRegistry.registerItem(TinIngot, ITNames.TinIngot);
+		GameRegistry.registerItem(AdamantiumIngot, SAMWINames.AdamantiumIngot);
+		GameRegistry.registerItem(BronzeIngot, SAMWINames.BronzeIngot);
+		GameRegistry.registerItem(CopperIngot, SAMWINames.CopperIngot);
+		GameRegistry.registerItem(ManaIngot, SAMWINames.ManaIngot);
+		GameRegistry.registerItem(MithrilIngot, SAMWINames.MithrilIngot);
+		GameRegistry.registerItem(RuneIngot, SAMWINames.RuneIngot);
+		GameRegistry.registerItem(SiliconIngot, SAMWINames.SiliconIngot);
+		GameRegistry.registerItem(SilverIngot, SAMWINames.SiliverIngot);
+		GameRegistry.registerItem(StarSteelIngot, SAMWINames.StartSteelIngot);		
+		GameRegistry.registerItem(SteelIngot, SAMWINames.SteelIngot);
+		GameRegistry.registerItem(TitaniumIngot, SAMWINames.TitaniumIngot);
+		GameRegistry.registerItem(TinIngot, SAMWINames.TinIngot);
 
 	}
 
 	private static void LanguageReg() {
-		LanguageRegistry.addName(AdamantiumIngot, ITNames.AdamantiumIngot);
-		LanguageRegistry.addName(BronzeIngot, ITNames.BronzeIngot);
-		LanguageRegistry.addName(CopperIngot, ITNames.CopperIngot);
-		LanguageRegistry.addName(ManaIngot, ITNames.ManaIngot);
-		LanguageRegistry.addName(MithrilIngot, ITNames.MithrilIngot);
-		LanguageRegistry.addName(RuneIngot, ITNames.RuneIngot);
-		LanguageRegistry.addName(SiliconIngot, ITNames.SiliconIngot);
-		LanguageRegistry.addName(SilverIngot, ITNames.SiliverIngot);
-		LanguageRegistry.addName(StarSteelIngot, ITNames.StartSteelIngot);
-		LanguageRegistry.addName(SteelIngot, ITNames.SteelIngot);
-		LanguageRegistry.addName(TitaniumIngot, ITNames.TitaniumIngot);
-		LanguageRegistry.addName(TinIngot, ITNames.TinIngot);
+		LanguageRegistry.addName(AdamantiumIngot, SAMWINames.AdamantiumIngot);
+		LanguageRegistry.addName(BronzeIngot, SAMWINames.BronzeIngot);
+		LanguageRegistry.addName(CopperIngot, SAMWINames.CopperIngot);
+		LanguageRegistry.addName(ManaIngot, SAMWINames.ManaIngot);
+		LanguageRegistry.addName(MithrilIngot, SAMWINames.MithrilIngot);
+		LanguageRegistry.addName(RuneIngot, SAMWINames.RuneIngot);
+		LanguageRegistry.addName(SiliconIngot, SAMWINames.SiliconIngot);
+		LanguageRegistry.addName(SilverIngot, SAMWINames.SiliverIngot);
+		LanguageRegistry.addName(StarSteelIngot, SAMWINames.StartSteelIngot);
+		LanguageRegistry.addName(SteelIngot, SAMWINames.SteelIngot);
+		LanguageRegistry.addName(TitaniumIngot, SAMWINames.TitaniumIngot);
+		LanguageRegistry.addName(TinIngot, SAMWINames.TinIngot);
 		
 	}
 
 	private static void MetaItems() {
 		/* Axe head */
-		 for(int i = 0; i < ITNames.AXEHEAD_META_NAME.length; i++){
-			 LanguageRegistry.addName(new ItemStack(AxeHead, 1, i),ITNames.AXEHEAD_META_NAME[i]);
+		 for(int i = 0; i < SAMWINames.AXEHEAD_META_NAME.length; i++){
+			 LanguageRegistry.addName(new ItemStack(AxeHead, 1, i),SAMWINames.AXEHEAD_META_NAME[i]);
 		 }
 		/* Pickaxe head */
-		for (int i = 0; i < ITNames.PAXEHEAD_META_NAME.length; i++){
-			LanguageRegistry.addName(new ItemStack(PickaxeHead, 1, i), ITNames.PAXEHEAD_META_NAME[i]);
+		for (int i = 0; i < SAMWINames.PAXEHEAD_META_NAME.length; i++){
+			LanguageRegistry.addName(new ItemStack(PickaxeHead, 1, i), SAMWINames.PAXEHEAD_META_NAME[i]);
 		}
 		/* Gems */
-		for (int i = 0; i < ITNames.GEM_META_NAME.length; i++) {
-			LanguageRegistry.addName(new ItemStack(Gem, 1, i), ITNames.GEM_META_NAME[i]);
+		for (int i = 0; i < SAMWINames.GEM_META_NAME.length; i++) {
+			LanguageRegistry.addName(new ItemStack(Gem, 1, i), SAMWINames.GEM_META_NAME[i]);
 		}
 		/* Molds */
-		for (int i = 0; i < ITNames.MOLD_META_NAME.length; i++) {
-			LanguageRegistry.addName(new ItemStack(Mold, 1, i), ITNames.MOLD_META_NAME[i]);
+		for (int i = 0; i < SAMWINames.MOLD_META_NAME.length; i++) {
+			LanguageRegistry.addName(new ItemStack(Mold, 1, i), SAMWINames.MOLD_META_NAME[i]);
 		}
 		/* Blade */
-		for (int i = 0; i < ITNames.BLADE_META_NAME.length; i++) {
-			LanguageRegistry.addName(new ItemStack(Blade, 1, i), ITNames.BLADE_META_NAME[i]);
+		for (int i = 0; i < SAMWINames.BLADE_META_NAME.length; i++) {
+			LanguageRegistry.addName(new ItemStack(Blade, 1, i), SAMWINames.BLADE_META_NAME[i]);
 		}
 		/* Simple Tools */
-		for (int i = 0; i < ITNames.SIMPTOOL_META_NAME.length; i++) {
-			LanguageRegistry.addName(new ItemStack(Simptool, 1, i), ITNames.SIMPTOOL_META_NAME[i]);
+		for (int i = 0; i < SAMWINames.SIMPTOOL_META_NAME.length; i++) {
+			LanguageRegistry.addName(new ItemStack(Simptool, 1, i), SAMWINames.SIMPTOOL_META_NAME[i]);
 		}
 		/* Shovel Head*/
-		for (int i = 0; i < ITNames.SHOVHEAD_META_NAME.length; i++){
-			LanguageRegistry.addName(new ItemStack(ShovelHead, 1, i), ITNames.SHOVHEAD_META_NAME[i]);
+		for (int i = 0; i < SAMWINames.SHOVHEAD_META_NAME.length; i++){
+			LanguageRegistry.addName(new ItemStack(ShovelHead, 1, i), SAMWINames.SHOVHEAD_META_NAME[i]);
 		}
 
 	}

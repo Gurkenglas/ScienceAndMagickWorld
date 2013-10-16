@@ -1,6 +1,6 @@
 package us.samcraft.samw.lib;
 
-public class BlockID {
+public class SAMWBlockID {
 
 	/* Default Ids */
 	public static int ADAMANTUM_ORE_DEFAULT = 3600;

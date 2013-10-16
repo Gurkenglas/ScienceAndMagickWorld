@@ -3,7 +3,7 @@ package us.samcraft.samw.item;
 import java.util.List;
 
 import us.samcraft.samw.SAMWMain;
-import us.samcraft.samw.lib.ITNames;
+import us.samcraft.samw.lib.SAMWINames;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -24,14 +24,14 @@ public class ItemPickAxeHead extends Item{
 	}
 	@Override
 	public String getUnlocalizedName(ItemStack itemstack){
-		return ITNames.PAXEHEAD + itemstack.getItemDamage();
+		return SAMWINames.PAXEHEAD + itemstack.getItemDamage();
 	}
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister reg){
-		icons = new Icon[ITNames.PAXHEAD_ICONS.length];
+		icons = new Icon[SAMWINames.PAXHEAD_ICONS.length];
 		for (int i = 0; i < icons.length; i++){
-			icons[i] = reg.registerIcon("samw:parts/pickaxe/" + ITNames.PAXHEAD_ICONS[i]);
+			icons[i] = reg.registerIcon("samw:parts/pickaxe/" + SAMWINames.PAXHEAD_ICONS[i]);
 		}
 	}
 	@Override
@@ -42,7 +42,7 @@ public class ItemPickAxeHead extends Item{
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void getSubItems(int id, CreativeTabs tabs, List list){
-		for (int i = 0; i < ITNames.BLADE_META_NAME.length; i++){
+		for (int i = 0; i < SAMWINames.BLADE_META_NAME.length; i++){
 			ItemStack stack = new ItemStack(id, 1, i);
 			list.add(stack);
 		}

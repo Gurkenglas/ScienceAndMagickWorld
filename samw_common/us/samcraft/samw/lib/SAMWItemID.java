@@ -1,6 +1,6 @@
 package us.samcraft.samw.lib;
 
-public class ItemID {
+public class SAMWItemID {
 
 	/* Default Item IDs */
 	public static int GEM_DEFAULT = 4500;

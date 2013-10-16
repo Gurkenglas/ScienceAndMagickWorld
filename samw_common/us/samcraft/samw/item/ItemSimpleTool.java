@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
 import us.samcraft.samw.SAMWMain;
-import us.samcraft.samw.lib.ITNames;
+import us.samcraft.samw.lib.SAMWINames;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -25,16 +25,16 @@ public class ItemSimpleTool extends Item {
 
 	@Override
 	public String getUnlocalizedName(ItemStack itemstack) {
-		return ITNames.SIMPTOOL + itemstack.getItemDamage();
+		return SAMWINames.SIMPTOOL + itemstack.getItemDamage();
 	}
 
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister reg) {
-		icons = new Icon[ITNames.SIMPTOOL_ICONS.length];
+		icons = new Icon[SAMWINames.SIMPTOOL_ICONS.length];
 		for (int i = 0; i < icons.length; i++) {
 			icons[i] = reg.registerIcon("samw:parts/simpletool/"
-					+ ITNames.SIMPTOOL_ICONS[i]);
+					+ SAMWINames.SIMPTOOL_ICONS[i]);
 		}
 	}
 
@@ -47,7 +47,7 @@ public class ItemSimpleTool extends Item {
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void getSubItems(int id, CreativeTabs tab, List list) {
-		for (int i = 0; i < ITNames.SIMPTOOL_META_NAME.length; i++) {
+		for (int i = 0; i < SAMWINames.SIMPTOOL_META_NAME.length; i++) {
 			ItemStack stack = new ItemStack(id, 1, i);
 			list.add(stack);
 		}

@@ -1,6 +1,6 @@
 package us.samcraft.samw.lib;
 
-public class BNames {
+public class SAMWBNames {
 	
 	public static final String oreCopper = "Copper Ore"; 
 	public static final String oreTin = "Tin Ore"; 

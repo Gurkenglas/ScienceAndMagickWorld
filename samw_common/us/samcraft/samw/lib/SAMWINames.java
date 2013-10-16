@@ -1,6 +1,6 @@
 package us.samcraft.samw.lib;
 
-public class ITNames {
+public class SAMWINames {
 	
 	/*Testing Meta*/
 	public static final String GEM = "Gems";

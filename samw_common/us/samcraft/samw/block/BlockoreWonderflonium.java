@@ -3,7 +3,7 @@ package us.samcraft.samw.block;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import us.samcraft.samw.SAMWMain;
-import us.samcraft.samw.lib.BNames;
+import us.samcraft.samw.lib.SAMWBNames;
 import us.samcraft.samw.lib.textures.ModBlockIcons;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -14,7 +14,7 @@ public class BlockoreWonderflonium extends Block {
 	public BlockoreWonderflonium(int id) {
 		super(id, Material.rock);
 		this.setCreativeTab(SAMWMain.tabsamw);
-		this.setUnlocalizedName(BNames.oreWonderflonium);
+		this.setUnlocalizedName(SAMWBNames.oreWonderflonium);
 		this.setHardness(10F);
 	}
 	@SideOnly(Side.CLIENT)
