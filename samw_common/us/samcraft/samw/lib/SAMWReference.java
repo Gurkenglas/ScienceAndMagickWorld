@@ -1,6 +1,6 @@
 package us.samcraft.samw.lib;
 
-public class Reference {
+public class SAMWReference {
 
 	public static final String MOD_ID = "samw";
 	public static final String MOD_NAME = "Science & Magick World";
