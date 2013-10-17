@@ -8,7 +8,7 @@ import us.samcraft.samw.lib.SAMWBNames;
 import us.samcraft.samw.lib.SAMWBlockID;
 import us.samcraft.samw.lib.SAMWINames;
 import us.samcraft.samw.lib.SAMWItemID;
-import us.samcraft.samw.lib.Reference;
+import us.samcraft.samw.lib.SAMWReference;
 import cpw.mods.fml.common.FMLLog;
 
 
@@ -77,7 +77,7 @@ public class ConfigurationHandler {
 			SAMWBlockID.LEAVES = configuration.getBlock(CATAGORY_NATUREBLOCK, SAMWBNames.LEAVES, SAMWBlockID.LEAVES_DEFAULT).getInt() - 256;
 			 
 		 }catch(Exception e) {
-			 FMLLog.log(Level.SEVERE, e, Reference.MOD_NAME + " Has had a issue loading its config");
+			 FMLLog.log(Level.SEVERE, e, SAMWReference.MOD_NAME + " Has had a issue loading its config");
 		 }finally{
 			configuration.save(); 
 		 }
