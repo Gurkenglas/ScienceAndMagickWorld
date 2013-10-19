@@ -6,7 +6,6 @@ import net.minecraft.creativetab.CreativeTabs;
 import us.samcraft.samw.block.SAMWBlock;
 import us.samcraft.samw.configuration.ConfigurationHandler;
 import us.samcraft.samw.crafting.SAMWCrafting;
-import us.samcraft.samw.crafting.Smelting;
 import us.samcraft.samw.creativetab.CreativeTabWorld;
 import us.samcraft.samw.item.SAMWItem;
 import us.samcraft.samw.lib.SAMWReference;
@@ -19,6 +18,10 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
+/**
+ * @author Anthony Anderson
+ *
+ */
 @Mod(
 	modid = SAMWReference.MOD_ID, 
 	name = SAMWReference.MOD_NAME, 
