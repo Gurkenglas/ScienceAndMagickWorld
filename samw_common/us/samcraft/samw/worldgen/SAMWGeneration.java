@@ -18,7 +18,7 @@ public class SAMWGeneration {
 		if(ConfigurationSettings.COMMON_ORE_GEN == true){
 			GameRegistry.registerWorldGenerator(new CommonOreGen());
 		}else{
-			LogHelper.log(Level.WARNING, "Common ore generation has been diabled, Science And Magick will not generate Copper, Siliver, and Tin ores");
+			LogHelper.log(Level.WARNING, "Common ore generation has been diabled, Science And Magick will not generate Copper, Siliver, or Tin ore");
 		}
 		
 	}
