@@ -1,7 +1,7 @@
 package us.samcraft.samw.configuration;
 
 /**
- * @author Anthony Anderson(Glassesofdoom)
+ * @author Anthony Anderson(LordIllyohs)
  *
  */
 public class ConfigurationSettings {

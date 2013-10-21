@@ -11,7 +11,10 @@ import us.samcraft.samw.lib.SAMWItemID;
 import us.samcraft.samw.lib.SAMWReference;
 import cpw.mods.fml.common.FMLLog;
 
-
+/**
+ * @author Anthony Anderson(LordIllyohs)
+ *
+ */
 public class ConfigurationHandler {
 	
 	public static Configuration configuration;
@@ -21,6 +24,7 @@ public class ConfigurationHandler {
 	public static final String CATAGORY_ORE = "Ores";
 	public static final String CATAGORY_NATUREBLOCK = "Nature";
 	public static final String CATAGORY_GEM = "Gems";
+	public static final String CATAGORY_COMMONORE_GEN = "OreGeneration";
 	
 	public static void init(File configFile) {
 		 
@@ -36,6 +40,7 @@ public class ConfigurationHandler {
 			configuration.addCustomCategoryComment(CATAGORY_ORE, null);
 			configuration.addCustomCategoryComment(CATAGORY_NATUREBLOCK, null);
 			configuration.addCustomCategoryComment(CATAGORY_GEM, null);
+			configuration.addCustomCategoryComment(CATAGORY_COMMONORE_GEN, "Enable or disable ore generation, disableing common ore generation disables all ores listied");
 			
 			/* Meta Items */ 
 			SAMWItemID.GEM = configuration.getItem(CATEGORY_PART, SAMWINames.GEM, SAMWItemID.GEM_DEFAULT).getInt() - 256;
@@ -75,6 +80,12 @@ public class ConfigurationHandler {
 			
 			/* Nature blocks*/
 			SAMWBlockID.LEAVES = configuration.getBlock(CATAGORY_NATUREBLOCK, SAMWBNames.LEAVES, SAMWBlockID.LEAVES_DEFAULT).getInt() - 256;
+			
+			/* Ore generation settings */
+			ConfigurationSettings.COMMON_ORE_GEN = configuration.get(CATAGORY_COMMONORE_GEN, "Enabel common ore generation", ConfigurationSettings.COMMON_ORE_GEN_DEFUALT).getBoolean(ConfigurationSettings.COMMON_ORE_GEN_DEFUALT);
+			ConfigurationSettings.COPPER_ORE_GEN = configuration.get(CATAGORY_COMMONORE_GEN, "Enabel copper ore generation", ConfigurationSettings.COPPER_ORE_GEN_DEFAULT).getBoolean(ConfigurationSettings.COPPER_ORE_GEN_DEFAULT);
+			ConfigurationSettings.SILVER_ORE_GEN = configuration.get(CATAGORY_COMMONORE_GEN, "Enabel silver ore generation", ConfigurationSettings.SILVER_ORE_GEN_DEFAULT).getBoolean(ConfigurationSettings.SILVER_ORE_GEN_DEFAULT);
+			ConfigurationSettings.TIN_ORE_GEN = configuration.get(CATAGORY_COMMONORE_GEN, "Enabel tin ore generation", ConfigurationSettings.TIN_ORE_GEN_DEfAULT).getBoolean(ConfigurationSettings.TIN_ORE_GEN_DEfAULT);
 			 
 		 }catch(Exception e) {
 			 FMLLog.log(Level.SEVERE, e, SAMWReference.MOD_NAME + " Has had a issue loading its config");
