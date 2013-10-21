@@ -13,6 +13,10 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
 
+/**
+ * @author Anthony Anderson(LordIlloyhs)
+ *
+ */
 public class BlockLeaves extends Block{
 	
 	@SideOnly(Side.CLIENT)

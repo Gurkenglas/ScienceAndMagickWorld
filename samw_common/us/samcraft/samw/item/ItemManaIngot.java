@@ -8,6 +8,10 @@ import us.samcraft.samw.lib.textures.ModItemIcons;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
+/**
+ * @author Anthony Anderson(LordIlloyhs)
+ *
+ */
 public class ItemManaIngot extends Item {
 
 	public ItemManaIngot(int id) {

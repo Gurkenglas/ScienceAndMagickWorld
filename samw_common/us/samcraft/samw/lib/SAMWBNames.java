@@ -1,5 +1,9 @@
 package us.samcraft.samw.lib;
 
+/**
+ * @author Anthony Anderson(LordIlloyhs)
+ *
+ */
 public class SAMWBNames {
 	
 	public static final String oreCopper = "Copper Ore"; 

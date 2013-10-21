@@ -9,6 +9,10 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 
+/**
+ * @author Anthony Anderson(LordIlloyhs)
+ *
+ */
 public class BlockoreCopper extends Block {
 
 	public BlockoreCopper(int id) {

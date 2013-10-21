@@ -7,6 +7,10 @@ import us.samcraft.samw.lib.SAMWBNames;
 import us.samcraft.samw.lib.SAMWBlockID;
 import net.minecraft.block.Block;
 
+/**
+ * @author Anthony Anderson(LordIlloyhs)
+ *
+ */
 public class SAMWBlock {
 	
 	public static Block oreAdamantium;

@@ -4,6 +4,10 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 import us.samcraft.samw.block.SAMWBlock;
 
+/**
+ * @author Anthony Anderson(LordIlloyhs)
+ *
+ */
 public class DictionaryOres {
 	
 	public static void init(){

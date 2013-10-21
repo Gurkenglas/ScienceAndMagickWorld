@@ -5,6 +5,10 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.creativetab.CreativeTabs;
 
+/**
+ * @author Anthony Anderson(LordIlloyhs)
+ *
+ */
 public class CreativeTabWorld extends CreativeTabs{
 
 	public CreativeTabWorld(String label) {

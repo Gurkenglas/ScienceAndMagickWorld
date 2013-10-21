@@ -1,6 +1,3 @@
-/**
- * All smelting recipes are in this class
- */
 package us.samcraft.samw.crafting;
 
 import net.minecraft.item.ItemStack;
@@ -8,9 +5,8 @@ import us.samcraft.samw.block.SAMWBlock;
 import us.samcraft.samw.item.SAMWItem;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-
 /**
- * @author Anthony
+ * @author Anthony Anderson(LordIlloyhs)
  *
  */
 public class Smelting {

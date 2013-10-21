@@ -12,6 +12,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
 
+/**
+ * @author Anthony Anderson(LordIlloyhs)
+ *
+ */
 public class ItemAxeHead extends Item {
 	
 	@SideOnly(Side.CLIENT)

@@ -1,5 +1,9 @@
 package us.samcraft.samw.lib;
 
+/**
+ * @author Anthony Anderson(LordIlloyhs)
+ *
+ */
 public class SAMWItemID {
 
 	/* Default Item IDs */

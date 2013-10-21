@@ -1,5 +1,9 @@
 package us.samcraft.samw.lib.textures;
 
+/**
+ * @author Anthony Anderson(LordIlloyhs)
+ *
+ */
 public class ModBlockIcons {
 	
 	private static final String ORE = "samw:ore/";

@@ -4,6 +4,10 @@ import us.samcraft.samw.item.SAMWItem;
 import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.registry.GameRegistry;
 
+/**
+ * @author Anthony Anderson(LordIlloyhs)
+ *
+ */
 public class TempRecipes {
 
 	public static void init() {

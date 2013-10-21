@@ -12,6 +12,10 @@ import us.samcraft.samw.lib.SAMWINames;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
+/**
+ * @author Anthony Anderson(LordIlloyhs)
+ *
+ */
 public class ItemShovelHead extends Item {
 
 	@SideOnly(Side.CLIENT)

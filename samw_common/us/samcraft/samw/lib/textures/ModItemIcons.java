@@ -1,5 +1,9 @@
 package us.samcraft.samw.lib.textures;
 
+/**
+ * @author Anthony Anderson(LordIlloyhs)
+ *
+ */
 public class ModItemIcons {
 
 	private static final String PARTS = "samw:parts/";

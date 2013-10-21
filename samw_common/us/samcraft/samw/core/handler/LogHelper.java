@@ -8,7 +8,7 @@ import cpw.mods.fml.common.FMLLog;
 import us.samcraft.samw.lib.SAMWReference;
 
 /**
- * @author Anthony Anderson(Glassesofdoom)
+ * @author Anthony Anderson(LordIlloyhs)
  *
  */
 public class LogHelper {

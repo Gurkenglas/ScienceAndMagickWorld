@@ -7,6 +7,10 @@ import us.samcraft.samw.lib.SAMWItemID;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
+/**
+ * @author Anthony Anderson(LordIlloyhs)
+ *
+ */
 public class SAMWItem {
 
 	public static Item Gem;
