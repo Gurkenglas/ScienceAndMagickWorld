@@ -42,7 +42,6 @@ public class CommonOreGen implements IWorldGenerator {
 
 	private void generateSurface(World world, Random random, int chunkX, int chunkZ) {
 		
-		if(ConfigurationSettings.COPPER_ORE_GEN == true){
 			for (int i = 0; i < 16; i++){
 				int BlockOreX = chunkX + random.nextInt(16);
 				int BlockOreY = random.nextInt(50);
@@ -50,13 +49,8 @@ public class CommonOreGen implements IWorldGenerator {
 				
 				(new WorldGenMinable(SAMWBlock.oreCopper.blockID, 5)).generate(world, random, BlockOreX, BlockOreY, BlockOreZ);
 			}
+					
 			
-		}else{
-			
-			LogHelper.log(Level.WARNING, "Copper ore generation has been diabled!");
-			
-		}
-		if(ConfigurationSettings.SILVER_ORE_GEN == true){
 			for (int i = 0; i < 16; i++){
 				int BlockOreX = chunkX + random.nextInt(16);
 				int BlockOreY = random.nextInt(50);
@@ -65,12 +59,6 @@ public class CommonOreGen implements IWorldGenerator {
 				(new WorldGenMinable(SAMWBlock.oreSiliver.blockID, 5)).generate(world, random, BlockOreX, BlockOreY, BlockOreZ);
 			}
 			
-		}else{
-			
-			LogHelper.log(Level.WARNING, "Siliver ore generation has been diabled!");
-			
-		}
-		if(ConfigurationSettings.TIN_ORE_GEN == true){
 			for (int i = 0; i < 156; i++){
 				int BlockOreX = chunkX + random.nextInt(16);
 				int BlockOreY = random.nextInt(50);
@@ -78,13 +66,6 @@ public class CommonOreGen implements IWorldGenerator {
 				
 				(new WorldGenMinable(SAMWBlock.oreTin.blockID, 5)).generate(world, random, BlockOreX, BlockOreY, BlockOreZ);
 			}
-			
-		}else{
-			
-			LogHelper.log(Level.WARNING, "Tin ore generation has been diabled!");
-			
-		}
-		
 			
 	}
 
