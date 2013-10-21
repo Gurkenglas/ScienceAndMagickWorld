@@ -18,7 +18,7 @@ public class SAMWGeneration {
 		if(ConfigurationSettings.COMMON_ORE_GEN == true){
 			GameRegistry.registerWorldGenerator(new CommonOreGen());
 		}else{
-			LogHelper.log(Level.WARNING, "Common ore generation has been diabled now disableing, Copper, Siliver, and Tin");
+			LogHelper.log(Level.WARNING, "Common ore generation has been diabled, now disableing Copper, Siliver, and Tin");
 		}
 		
 	}
