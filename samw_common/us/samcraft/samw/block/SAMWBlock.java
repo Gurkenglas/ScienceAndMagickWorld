@@ -56,7 +56,7 @@ public class SAMWBlock {
 		
 		decClearRock = new BlockdecClearRock(SAMWBlockID.CLEAR_DEC);
 		
-		Leaves = new BlockLeaves(SAMWBlockID.LEAVES);
+		//Leaves = new BlockLeaves(SAMWBlockID.LEAVES);
 		
 		GameReg();
 		LangReg();
@@ -81,7 +81,7 @@ public class SAMWBlock {
 		GameRegistry.registerBlock(oreTin, SAMWBNames.oreTin);
 		GameRegistry.registerBlock(oreTitanium, SAMWBNames.oreTitanium);
 		GameRegistry.registerBlock(oreWonderflonium, SAMWBNames.oreWonderflonium);
-		GameRegistry.registerBlock(Leaves, SAMWBNames.LEAVES);
+		//GameRegistry.registerBlock(Leaves, SAMWBNames.LEAVES);
 		GameRegistry.registerBlock(decClearRock, SAMWBNames.decClearRock);
 		
 	}
