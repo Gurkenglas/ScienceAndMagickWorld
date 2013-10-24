@@ -1,4 +1,4 @@
-package us.samcraft.samw.block;
+package us.samcraft.samw.block.tree;
 
 import java.util.List;
 

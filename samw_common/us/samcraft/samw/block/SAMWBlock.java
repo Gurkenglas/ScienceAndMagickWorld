@@ -2,6 +2,18 @@ package us.samcraft.samw.block;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
+import us.samcraft.samw.block.clear.BlockdecClearRock;
+import us.samcraft.samw.block.ore.BlockoreAdamantium;
+import us.samcraft.samw.block.ore.BlockoreCopper;
+import us.samcraft.samw.block.ore.BlockoreMithril;
+import us.samcraft.samw.block.ore.BlockoreOrichalcum;
+import us.samcraft.samw.block.ore.BlockoreRune;
+import us.samcraft.samw.block.ore.BlockoreSilicon;
+import us.samcraft.samw.block.ore.BlockoreSiliver;
+import us.samcraft.samw.block.ore.BlockoreTin;
+import us.samcraft.samw.block.ore.BlockoreTitanium;
+import us.samcraft.samw.block.ore.BlockoreWonderflonium;
+import us.samcraft.samw.block.tree.BlockLeaves;
 import us.samcraft.samw.crafting.DictionaryOres;
 import us.samcraft.samw.lib.SAMWBNames;
 import us.samcraft.samw.lib.SAMWBlockID;
@@ -23,6 +35,9 @@ public class SAMWBlock {
 	public static Block oreTin;
 	public static Block oreTitanium;
 	public static Block oreWonderflonium;
+	
+	public static Block decClearRock;
+	
 	public static Block Leaves;
 	
 	public static void init() {
@@ -38,6 +53,9 @@ public class SAMWBlock {
 		oreTin = new BlockoreTin(SAMWBlockID.TIN_ORE);
 		oreTitanium = new BlockoreTitanium(SAMWBlockID.SILIVER_ORE);
 		oreWonderflonium = new BlockoreWonderflonium(SAMWBlockID.WONDERFLONIUM_ORE);
+		
+		decClearRock = new BlockdecClearRock(SAMWBlockID.CLEAR_DEC);
+		
 		Leaves = new BlockLeaves(SAMWBlockID.LEAVES);
 		
 		GameReg();
@@ -64,6 +82,7 @@ public class SAMWBlock {
 		GameRegistry.registerBlock(oreTitanium, SAMWBNames.oreTitanium);
 		GameRegistry.registerBlock(oreWonderflonium, SAMWBNames.oreWonderflonium);
 		GameRegistry.registerBlock(Leaves, SAMWBNames.LEAVES);
+		GameRegistry.registerBlock(decClearRock, SAMWBNames.decClearRock);
 		
 	}
 
@@ -78,6 +97,7 @@ public class SAMWBlock {
 		LanguageRegistry.addName(oreTin, SAMWBNames.oreTin);
 		LanguageRegistry.addName(oreTitanium, SAMWBNames.oreTitanium);
 		LanguageRegistry.addName(oreWonderflonium, SAMWBNames.oreWonderflonium);
+		LanguageRegistry.addName(decClearRock, SAMWBNames.decClearRock);
 		
 	}
 

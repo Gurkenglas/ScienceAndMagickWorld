@@ -1,4 +1,4 @@
-package us.samcraft.samw.block;
+package us.samcraft.samw.block.ore;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -13,18 +13,18 @@ import net.minecraft.client.renderer.texture.IconRegister;
  * @author Anthony Anderson(LordIlloyhs)
  *
  */
-public class BlockoreOrichalcum extends Block {
+public class BlockoreCopper extends Block {
 
-	public BlockoreOrichalcum(int id) {
+	public BlockoreCopper(int id) {
 		super(id, Material.rock);
 		this.setCreativeTab(SAMWMain.tabsamw);
-		this.setUnlocalizedName(SAMWBNames.oreOrichalcum);
-		this.setHardness(7F);
+		this.setUnlocalizedName(SAMWBNames.oreCopper);
+		this.setHardness(3F);
 	}
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerIcons(IconRegister reg) {
-		this.blockIcon = reg.registerIcon(ModBlockIcons.oreOrichalcum);
+		this.blockIcon = reg.registerIcon(ModBlockIcons.oreCopper);
 	}
 
 }

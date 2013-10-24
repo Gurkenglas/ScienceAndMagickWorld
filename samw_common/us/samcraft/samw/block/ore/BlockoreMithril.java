@@ -1,4 +1,4 @@
-package us.samcraft.samw.block;
+package us.samcraft.samw.block.ore;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

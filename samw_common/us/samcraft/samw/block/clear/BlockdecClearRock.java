@@ -1,4 +1,4 @@
-package us.samcraft.samw.block;
+package us.samcraft.samw.block.clear;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -13,18 +13,22 @@ import net.minecraft.client.renderer.texture.IconRegister;
  * @author Anthony Anderson(LordIlloyhs)
  *
  */
-public class BlockoreWonderflonium extends Block {
+public class BlockdecClearRock extends Block{
 
-	public BlockoreWonderflonium(int id) {
+	public BlockdecClearRock(int id) {
 		super(id, Material.rock);
 		this.setCreativeTab(SAMWMain.tabsamw);
-		this.setUnlocalizedName(SAMWBNames.oreWonderflonium);
-		this.setHardness(10F);
+		this.setUnlocalizedName(SAMWBNames.decClearRock);
+		this.setHardness(3F);
+	}
+	@Override
+	public boolean isOpaqueCube(){
+		return false;
 	}
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerIcons(IconRegister reg) {
-		this.blockIcon = reg.registerIcon(ModBlockIcons.oreWonderflonium);
+		this.blockIcon = reg.registerIcon(ModBlockIcons.decClearRock);
 	}
 
 }

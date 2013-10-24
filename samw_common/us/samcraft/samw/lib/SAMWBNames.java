@@ -25,6 +25,7 @@ public class SAMWBNames {
 	public static final String oreDarkDiamondBlock = "DarkDiamond Block";
     public static final String oreDarkEmeraldBlock = "DarkEmerald Block";
 	public static final String oreJadeBlock = "Jade Block";
+	public static final String decClearRock = "Clear Rock";
 	  
 	public static final String crysAetherium = "Aetherium Crystle";
 	 

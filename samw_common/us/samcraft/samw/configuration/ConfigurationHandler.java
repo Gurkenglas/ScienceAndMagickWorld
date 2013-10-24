@@ -66,7 +66,7 @@ public class ConfigurationHandler {
 			SAMWItemID.TITANIUM_INGOT = configuration.getItem(CATEGORY_INGOT, SAMWINames.TitaniumIngot, SAMWItemID.TITANIUM_INGOT_DEFAULT).getInt() - 256;
 			SAMWItemID.TIN_INGOT = configuration.getItem(CATEGORY_INGOT, SAMWINames.TinIngot, SAMWItemID.TIN_INGOT_DEFAULT).getInt() - 256;
 			
-			/* Blocks */
+			/* ores */
 			SAMWBlockID.ADAMANTUM_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreAdamantium, SAMWBlockID.ADAMANTUM_ORE_DEFAULT).getInt() - 256;
 			SAMWBlockID.COPPER_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreCopper, SAMWBlockID.COPPER_ORE_DEFAULT).getInt() - 256;
 			SAMWBlockID.MITHRIL_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreMithril, SAMWBlockID.MITHRIL_ORE_DEFAULT).getInt() - 256;
@@ -77,6 +77,8 @@ public class ConfigurationHandler {
 			SAMWBlockID.TIN_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreTin, SAMWBlockID.TIN_ORE_DEFAULT).getInt() - 256;
 			SAMWBlockID.TITANIUM_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreTitanium, SAMWBlockID.TITANIUM_ORE_DEFAULT).getInt() - 256;
 			SAMWBlockID.WONDERFLONIUM_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreWonderflonium, SAMWBlockID.WONDERFLONIUM_ORE_DEFAULT).getInt() -256;
+			
+			SAMWBlockID.CLEAR_DEC = configuration.getBlock(CATAGORY_ORE, SAMWBNames.decClearRock, SAMWBlockID.CLEARBLOCK_DEC_DEFAULT).getInt() -256;//temp place till I get this concept down
 			
 			/* Nature blocks*/
 			SAMWBlockID.LEAVES = configuration.getBlock(CATAGORY_NATUREBLOCK, SAMWBNames.LEAVES, SAMWBlockID.LEAVES_DEFAULT).getInt() - 256;

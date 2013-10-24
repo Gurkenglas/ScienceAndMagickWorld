@@ -8,6 +8,7 @@ public class ModBlockIcons {
 	
 	private static final String ORE = "samw:ore/";
 	private static final String TREE = "samw:tree/";
+	private static final String CLEAR = "samw:clearblock/";
 	
 	public static final String oreAdamantium = ORE + "Adamantium";
 	public static final String oreCopper = ORE + "Copper";
@@ -22,4 +23,6 @@ public class ModBlockIcons {
 	public static final String oreWonderflonium = ORE + "Wonderflonium";
 	
 	public static final String Limestone = ORE + "Limeststone";
+	
+	public static final String decClearRock = CLEAR + "ClearBlock";
 }
