@@ -5,5 +5,6 @@ package us.samcraft.samw.worldgen.ores;
  *
  */
 public class NonCommonOreGen {
+    //TODO finish on Friday
 
 }
