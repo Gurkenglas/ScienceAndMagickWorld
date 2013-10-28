@@ -1,5 +1,4 @@
-<project name = "ScienceAndMagickWorld" default="main">
-        
+<project name="SicenceAndMagickWorld" default="main">
         <property environment="env"/>
         <!-- Properties -->
 
@@ -10,18 +9,18 @@
         <property name="download.dir" value="download"/>
 
         <property name="classes.dir" value="${build.dir}/classes"/>
-        <property name="jar.dir" value="bin"/>
+        <property name="jar.dir" value="jar"/>
 
         <property name="forge.dir" value="${build.dir}/forge"/>
         <property name="mcp.dir" value="${forge.dir}/mcp"/>
 
         <property name="mcpsrc.dir" value="${mcp.dir}/src"/>
 
-        <property name="mc.version" value="1.6.2"/>
-        <property name="forge.version" value="9.10.1.870"/>
+        <property name="mc.version" value="1.6.4"/>
+        <property name="forge.version" value="9.11.1.916"/>
 
     	<property name="version.major" value="0"/>
-    	<property name="version.minor" value="0"/>
+    	<property name="version.minor" value="1"/>
 
         <property name="forge.name" value="minecraftforge-src-${mc.version}-${forge.version}.zip"/>
 
@@ -63,9 +62,8 @@
 
         <target name="git-revision" if="git.present">
                 <exec executable="git" dir="." outputproperty="git.revision" failifexecutionfails="false" errorproperty="">
-                        <arg value="describe"/>
-                        <arg value="--tags"/>
-                        <arg value="--always"/>
+                        <arg value="rev-parse"/>
+                        <arg value="--short"/>
                         <arg value="HEAD"/>
                 </exec>
                 <echo message="Git revision: ${git.revision}"/>
@@ -89,7 +87,7 @@
                 <!-- Fix executable permissions -->
                 <chmod dir="${forge.dir}" perm="ugo+rx" includes="**.sh"/>
 
-      
+ 
                 <!-- Install forge -->
                 <exec dir="${forge.dir}" executable="${forge.dir}/fml/python/python_fml" osfamily="windows">
                         <arg line="install.py --no-assets"/>
@@ -107,7 +105,6 @@
                         <fileset dir="${src.dir}"/>
                         <filterset>
                                 <filter token="VERSION" value="${project.version.full}" />
-                <filter token="MCVERSION" value="${mc.version}" />
                         </filterset>
                 </copy>
         </target>
@@ -139,11 +136,11 @@
 
                 <!-- Reobfuscate -->
                 <exec dir="${mcp.dir}" executable="cmd" osfamily="windows">
-                        <arg line="/c reobfuscate.bat"/>
+                        <arg line="/c reobfuscate_srg.bat"/>
                 </exec>
 
                 <exec dir="${mcp.dir}" executable="sh" osfamily="unix">
-                        <arg value="reobfuscate.sh"/>
+                        <arg value="reobfuscate_srg.sh"/>
                 </exec>
 
                 <!-- Copy classes -->
@@ -154,13 +151,13 @@
                 <!-- Copy resources -->
                 <copy todir="${classes.dir}" outputencoding="UTF-8">
                         <fileset dir="${classes.dir}">
-                                <include name="assets/chaoticbastion/lang/*"/>
+                                <include name="assets/tinker/lang/*"/>
                         </fileset>
                 </copy>
                 <copy file="${resources.dir}/mcmod.info" todir="${classes.dir}" outputencoding="UTF-8">
                         <filterset>
-                                <filter token="VERSION" value="${project.version.full}" />
-                                <filter token="MCVERSION" value="${mc.version}" />
+                                <filter token="@VERSION@" value="${project.version.full}" />
+                                <filter token="@MCVERSION@" value="${mc.version}" />
                         </filterset>
                 </copy>
                 <copy todir="${classes.dir}">
@@ -170,15 +167,8 @@
                 </copy>
 
                 <!-- Reset src dir to post-forge-install state -->
-        <delete>
-            <fileset dir="${mcpsrc.dir}/minecraft">
-                <exclude name="cpw/*"/>
-                <exclude name="ibxm/*"/>
-                <exclude name="net/*"/>
-                <exclude name="paulscode/*"/>
-                <exclude name="./*.*"/> <!-- Ignore files in the folder -->
-            </fileset>
-        </delete>
+                <delete dir="${mcpsrc.dir}/minecraft/us"/>
+
 
         </target>
 
@@ -187,12 +177,11 @@
 
                 <delete dir="${jar.dir}"/>
                 <mkdir dir="${jar.dir}"/>
-                <jar destfile="${jar.dir}/ScienceandMagickWorld-${mc.version}-${project.version.full}.jar" basedir="${classes.dir}"/>
+                <jar destfile="${jar.dir}/SicenceAndMagickWorld-${mc.version}-${project.version.full}.jar" basedir="${classes.dir}"/>
 
         </target>
 
         <!-- Default target to run -->
         <target name="main" depends="package"/>
-
 
 </project>
