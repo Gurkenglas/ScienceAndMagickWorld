@@ -25,6 +25,10 @@ public class BlockdecClearRock extends Block{
 	public boolean isOpaqueCube(){
 		return false;
 	}
+	@Override
+	public boolean renderAsNormalBlock() {
+		return true;
+	}
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerIcons(IconRegister reg) {
