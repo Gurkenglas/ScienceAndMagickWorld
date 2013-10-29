@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
 import us.samcraft.samw.SAMWMain;
-import us.samcraft.samw.lib.SAMWINames;
+import us.samcraft.samw.lib.names.SAMWINames;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 

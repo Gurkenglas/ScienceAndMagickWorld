@@ -11,6 +11,7 @@ import us.samcraft.samw.creativetab.CreativeTabItem;
 import us.samcraft.samw.creativetab.CreativeTabWorld;
 import us.samcraft.samw.item.SAMWItem;
 import us.samcraft.samw.lib.SAMWReference;
+import us.samcraft.samw.tool.SAMWTool;
 import us.samcraft.samw.worldgen.SAMWGeneration;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -56,6 +57,7 @@ public class SAMWMain {
 		SAMWBlock.init();
 		SAMWItem.init();
 		SAMWCrafting.init();
+		SAMWTool.init();
 		SAMWGeneration.init();
 		
 		

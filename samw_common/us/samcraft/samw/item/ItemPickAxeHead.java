@@ -3,7 +3,7 @@ package us.samcraft.samw.item;
 import java.util.List;
 
 import us.samcraft.samw.SAMWMain;
-import us.samcraft.samw.lib.SAMWINames;
+import us.samcraft.samw.lib.names.SAMWINames;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IconRegister;

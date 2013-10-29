@@ -15,8 +15,8 @@ import us.samcraft.samw.block.ore.BlockoreTitanium;
 import us.samcraft.samw.block.ore.BlockoreWonderflonium;
 import us.samcraft.samw.block.tree.BlockLeaves;
 import us.samcraft.samw.crafting.DictionaryOres;
-import us.samcraft.samw.lib.SAMWBNames;
-import us.samcraft.samw.lib.SAMWBlockID;
+import us.samcraft.samw.lib.id.SAMWBlockID;
+import us.samcraft.samw.lib.names.SAMWBNames;
 import net.minecraft.block.Block;
 
 /**

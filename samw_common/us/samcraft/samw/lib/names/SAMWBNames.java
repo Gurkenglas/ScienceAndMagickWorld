@@ -1,4 +1,4 @@
-package us.samcraft.samw.lib;
+package us.samcraft.samw.lib.names;
 
 /**
  * @author Anthony Anderson(LordIlloyhs)

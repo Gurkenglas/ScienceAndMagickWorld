@@ -3,7 +3,7 @@ package us.samcraft.samw.block.clear;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import us.samcraft.samw.SAMWMain;
-import us.samcraft.samw.lib.SAMWBNames;
+import us.samcraft.samw.lib.names.SAMWBNames;
 import us.samcraft.samw.lib.textures.ModBlockIcons;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

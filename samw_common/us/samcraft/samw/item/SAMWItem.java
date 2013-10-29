@@ -2,8 +2,8 @@ package us.samcraft.samw.item;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import us.samcraft.samw.lib.SAMWINames;
-import us.samcraft.samw.lib.SAMWItemID;
+import us.samcraft.samw.lib.id.SAMWItemID;
+import us.samcraft.samw.lib.names.SAMWINames;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 

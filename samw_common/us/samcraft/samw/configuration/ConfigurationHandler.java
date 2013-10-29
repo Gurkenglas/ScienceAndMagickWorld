@@ -4,11 +4,11 @@ import java.io.File;
 import java.util.logging.Level;
 
 import net.minecraftforge.common.Configuration;
-import us.samcraft.samw.lib.SAMWBNames;
-import us.samcraft.samw.lib.SAMWBlockID;
-import us.samcraft.samw.lib.SAMWINames;
-import us.samcraft.samw.lib.SAMWItemID;
 import us.samcraft.samw.lib.SAMWReference;
+import us.samcraft.samw.lib.id.SAMWBlockID;
+import us.samcraft.samw.lib.id.SAMWItemID;
+import us.samcraft.samw.lib.names.SAMWBNames;
+import us.samcraft.samw.lib.names.SAMWINames;
 import cpw.mods.fml.common.FMLLog;
 
 /**
