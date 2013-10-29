@@ -7,6 +7,7 @@ import us.samcraft.samw.block.SAMWBlock;
 import us.samcraft.samw.configuration.ConfigurationHandler;
 import us.samcraft.samw.core.handler.LogHelper;
 import us.samcraft.samw.crafting.SAMWCrafting;
+import us.samcraft.samw.creativetab.CreativeTabItem;
 import us.samcraft.samw.creativetab.CreativeTabWorld;
 import us.samcraft.samw.item.SAMWItem;
 import us.samcraft.samw.lib.SAMWReference;
@@ -38,7 +39,8 @@ public class SAMWMain {
 	@Instance(SAMWReference.MOD_ID)
 	public static SAMWMain instance;
 	
-	public static CreativeTabs tabsamw = new CreativeTabWorld(SAMWReference.MOD_NAME);
+	public static CreativeTabs tabsamw = new CreativeTabWorld(SAMWReference.MOD_NAME + " Blocks");
+	public static CreativeTabs tabsamwi = new CreativeTabItem(SAMWReference.MOD_NAME + " Items");
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
@@ -48,7 +50,8 @@ public class SAMWMain {
 		ConfigurationHandler.init(new File(event.getModConfigurationDirectory().getAbsolutePath() + File.separator + "Science&Magick" + File.separator + "Science&MagickWorld" + ".cfg"));
 		
 		/* Hate putting this in my main class will move this later */
-		LanguageRegistry.instance().addStringLocalization("itemGroup." + SAMWReference.MOD_NAME, "en_US", SAMWReference.MOD_NAME );
+		LanguageRegistry.instance().addStringLocalization("itemGroup." + SAMWReference.MOD_NAME + " Blocks", "en_US", SAMWReference.MOD_NAME + " Blocks");
+		LanguageRegistry.instance().addStringLocalization("itemGroup." + SAMWReference.MOD_NAME + " Items", "en_US", SAMWReference.MOD_NAME + " Items");
 		
 		SAMWBlock.init();
 		SAMWItem.init();

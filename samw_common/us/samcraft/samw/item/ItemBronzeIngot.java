@@ -16,7 +16,7 @@ public class ItemBronzeIngot extends Item {
 
 	public ItemBronzeIngot(int id) {
 		super(id);
-		this.setCreativeTab(SAMWMain.tabsamw);
+		this.setCreativeTab(SAMWMain.tabsamwi);
 		this.setUnlocalizedName(SAMWINames.BronzeIngot);
 	}
 	@SideOnly(Side.CLIENT)

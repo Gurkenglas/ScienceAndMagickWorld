@@ -23,7 +23,7 @@ public class ItemShovelHead extends Item {
 
 	public ItemShovelHead(int id) {
 		super(id);
-		this.setCreativeTab(SAMWMain.tabsamw);
+		this.setCreativeTab(SAMWMain.tabsamwi);
 		this.setHasSubtypes(true);
 	}
 	@Override

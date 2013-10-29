@@ -14,7 +14,7 @@ public class ItemTinIngot extends Item {
 
 	public ItemTinIngot(int id) {
 		super(id);
-		this.setCreativeTab(SAMWMain.tabsamw);
+		this.setCreativeTab(SAMWMain.tabsamwi);
 		this.setUnlocalizedName(SAMWINames.TinIngot);
 	}
 	@Override

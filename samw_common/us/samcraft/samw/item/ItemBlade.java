@@ -23,7 +23,7 @@ public class ItemBlade extends Item {
 
 	public ItemBlade(int id) {
 		super(id);
-		this.setCreativeTab(SAMWMain.tabsamw);
+		this.setCreativeTab(SAMWMain.tabsamwi);
 		this.setHasSubtypes(true);
 	}
 

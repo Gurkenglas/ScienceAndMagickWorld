@@ -23,7 +23,7 @@ public class ItemGem extends Item {
 
 	public ItemGem(int id) {
 		super(id);
-		this.setCreativeTab(SAMWMain.tabsamw);
+		this.setCreativeTab(SAMWMain.tabsamwi);
 		this.setHasSubtypes(true);
 	}
 

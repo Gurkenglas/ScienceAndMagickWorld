@@ -16,7 +16,7 @@ public class ItemAdamantiumIngot extends Item {
 
 	public ItemAdamantiumIngot(int id) {
 		super(id);
-		this.setCreativeTab(SAMWMain.tabsamw);
+		this.setCreativeTab(SAMWMain.tabsamwi);
 		this.setUnlocalizedName(SAMWINames.AdamantiumIngot);
 	}
 	@SideOnly(Side.CLIENT)

@@ -14,7 +14,7 @@ public class ItemStarSteelIngot extends Item {
 
 	public ItemStarSteelIngot(int id) {
 		super(id);
-		this.setCreativeTab(SAMWMain.tabsamw);
+		this.setCreativeTab(SAMWMain.tabsamwi);
 		this.setUnlocalizedName(SAMWINames.StartSteelIngot);
 	}
 	@Override

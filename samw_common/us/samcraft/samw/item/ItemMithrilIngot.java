@@ -14,7 +14,7 @@ public class ItemMithrilIngot extends Item {
 
 	public ItemMithrilIngot(int id) {
 		super(id);
-		this.setCreativeTab(SAMWMain.tabsamw);
+		this.setCreativeTab(SAMWMain.tabsamwi);
 		this.setUnlocalizedName(SAMWINames.MithrilIngot);
 	}
 	@Override

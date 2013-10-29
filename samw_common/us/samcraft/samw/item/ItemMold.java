@@ -23,7 +23,7 @@ public class ItemMold extends Item {
 
 	public ItemMold(int id) {
 		super(id);
-		this.setCreativeTab(SAMWMain.tabsamw);
+		this.setCreativeTab(SAMWMain.tabsamwi);
 		this.setHasSubtypes(true);
 	}
 

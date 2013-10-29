@@ -14,7 +14,7 @@ public class ItemOrichalcumIngot extends Item {
 
 	public ItemOrichalcumIngot(int id) {
 		super(id);
-		this.setCreativeTab(SAMWMain.tabsamw);
+		this.setCreativeTab(SAMWMain.tabsamwi);
 		this.setUnlocalizedName(SAMWINames.OrichalcumIngot);
 	}
 	@Override

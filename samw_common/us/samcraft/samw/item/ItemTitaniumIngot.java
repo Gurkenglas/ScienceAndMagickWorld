@@ -14,7 +14,7 @@ public class ItemTitaniumIngot extends Item {
 
 	public ItemTitaniumIngot(int id) {
 		super(id);
-		this.setCreativeTab(SAMWMain.tabsamw);
+		this.setCreativeTab(SAMWMain.tabsamwi);
 		this.setUnlocalizedName(SAMWINames.TitaniumIngot);
 	}
 	@Override

@@ -23,7 +23,7 @@ public class ItemSimpleTool extends Item {
 
 	public ItemSimpleTool(int id) {
 		super(id);
-		this.setCreativeTab(SAMWMain.tabsamw);
+		this.setCreativeTab(SAMWMain.tabsamwi);
 		this.setHasSubtypes(true);
 	}
 

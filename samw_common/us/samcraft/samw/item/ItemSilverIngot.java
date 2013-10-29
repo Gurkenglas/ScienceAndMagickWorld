@@ -14,7 +14,7 @@ public class ItemSilverIngot extends Item {
 
 	public ItemSilverIngot(int id) {
 		super(id);
-		this.setCreativeTab(SAMWMain.tabsamw);
+		this.setCreativeTab(SAMWMain.tabsamwi);
 		this.setUnlocalizedName(SAMWINames.SiliverIngot);
 	}
 	@Override

@@ -14,7 +14,7 @@ public class ItemRuneIngot extends Item {
 
 	public ItemRuneIngot(int id) {
 		super(id);
-		this.setCreativeTab(SAMWMain.tabsamw);
+		this.setCreativeTab(SAMWMain.tabsamwi);
 		this.setUnlocalizedName(SAMWINames.RuneIngot);
 	}
 	@Override

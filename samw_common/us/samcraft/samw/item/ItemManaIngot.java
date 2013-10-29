@@ -16,7 +16,7 @@ public class ItemManaIngot extends Item {
 
 	public ItemManaIngot(int id) {
 		super(id);
-		this.setCreativeTab(SAMWMain.tabsamw);
+		this.setCreativeTab(SAMWMain.tabsamwi);
 		this.setUnlocalizedName(SAMWINames.ManaIngot);
 	}
 	@SideOnly(Side.CLIENT)

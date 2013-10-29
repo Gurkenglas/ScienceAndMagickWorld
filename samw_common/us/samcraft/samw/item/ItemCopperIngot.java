@@ -16,7 +16,7 @@ public class ItemCopperIngot extends Item {
 
 	public ItemCopperIngot(int id) {
 		super(id);
-		this.setCreativeTab(SAMWMain.tabsamw);
+		this.setCreativeTab(SAMWMain.tabsamwi);
 		this.setUnlocalizedName(SAMWINames.CopperIngot);
 	}
 	@SideOnly(Side.CLIENT)

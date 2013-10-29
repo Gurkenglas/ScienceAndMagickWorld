@@ -23,7 +23,7 @@ public class ItemPickAxeHead extends Item{
 
 	public ItemPickAxeHead(int id){
 		super(id);
-		this.setCreativeTab(SAMWMain.tabsamw);
+		this.setCreativeTab(SAMWMain.tabsamwi);
 		this.setHasSubtypes(true);
 	}
 	@Override

@@ -14,7 +14,7 @@ public class ItemSiliconIngot extends Item {
 
 	public ItemSiliconIngot(int id) {
 		super(id);
-		this.setCreativeTab(SAMWMain.tabsamw);
+		this.setCreativeTab(SAMWMain.tabsamwi);
 		this.setUnlocalizedName(SAMWINames.SiliconIngot);
 	}
 	@Override

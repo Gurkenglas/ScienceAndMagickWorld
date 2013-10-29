@@ -14,7 +14,7 @@ public class ItemSteelIngot extends Item {
 
 	public ItemSteelIngot(int id) {
 		super(id);
-		this.setCreativeTab(SAMWMain.tabsamw);
+		this.setCreativeTab(SAMWMain.tabsamwi);
 		this.setUnlocalizedName(SAMWINames.SteelIngot);
 	}
 	@Override
