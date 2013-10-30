@@ -1,6 +1,3 @@
-/**
- * 
- */
 package us.samcraft.samw.creativetab;
 
 import us.samcraft.samw.block.SAMWBlock;
