@@ -6,8 +6,10 @@ import java.util.logging.Level;
 import net.minecraftforge.common.Configuration;
 import us.samcraft.samw.lib.SAMWReference;
 import us.samcraft.samw.lib.id.SAMWBlockID;
+import us.samcraft.samw.lib.id.SAMWFluidID;
 import us.samcraft.samw.lib.id.SAMWItemID;
 import us.samcraft.samw.lib.names.SAMWBNames;
+import us.samcraft.samw.lib.names.SAMWFNames;
 import us.samcraft.samw.lib.names.SAMWINames;
 import cpw.mods.fml.common.FMLLog;
 
@@ -25,6 +27,7 @@ public class ConfigurationHandler {
 	public static final String CATAGORY_NATUREBLOCK = "Nature";
 	public static final String CATAGORY_GEM = "Gems";
 	public static final String CATAGORY_COMMONORE_GEN = "OreGeneration";
+	public static final String CATAGORY_FLUID = "Fluids";
 	
 	public static void init(File configFile) {
 		 
@@ -40,6 +43,8 @@ public class ConfigurationHandler {
 			configuration.addCustomCategoryComment(CATAGORY_ORE, null);
 			configuration.addCustomCategoryComment(CATAGORY_NATUREBLOCK, null);
 			configuration.addCustomCategoryComment(CATAGORY_GEM, null);
+			configuration.addCustomCategoryComment(CATAGORY_FLUID, null);
+			
 			configuration.addCustomCategoryComment(CATAGORY_COMMONORE_GEN, "Enable or disable ore generation, disableing common ore generation disables all ores listied");
 			
 			/* Meta Items */ 
@@ -79,6 +84,9 @@ public class ConfigurationHandler {
 			SAMWBlockID.WONDERFLONIUM_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreWonderflonium, SAMWBlockID.WONDERFLONIUM_ORE_DEFAULT).getInt() -256;
 			SAMWBlockID.LEAD_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreLead, SAMWBlockID.ORICHALCUM_ORE_DEFAULT).getInt() -256;
 			
+			/*Fluids*/
+			SAMWFluidID.BLOOD = configuration.getBlock(CATAGORY_FLUID, SAMWFNames.Blood, SAMWFluidID.BLOOD_DEFAULT).getInt() - 256;
+			
 			SAMWBlockID.CLEAR_DEC = configuration.getBlock(CATAGORY_ORE, SAMWBNames.decClearRock, SAMWBlockID.CLEARBLOCK_DEC_DEFAULT).getInt() -256;//temp place till I get this concept down
 			
 			/* Nature blocks*/
@@ -89,6 +97,8 @@ public class ConfigurationHandler {
 			ConfigurationSettings.COPPER_ORE_GEN = configuration.get(CATAGORY_COMMONORE_GEN, "Enabel copper ore generation", ConfigurationSettings.COPPER_ORE_GEN_DEFAULT).getBoolean(ConfigurationSettings.COPPER_ORE_GEN_DEFAULT);
 			ConfigurationSettings.SILVER_ORE_GEN = configuration.get(CATAGORY_COMMONORE_GEN, "Enabel silver ore generation", ConfigurationSettings.SILVER_ORE_GEN_DEFAULT).getBoolean(ConfigurationSettings.SILVER_ORE_GEN_DEFAULT);
 			ConfigurationSettings.TIN_ORE_GEN = configuration.get(CATAGORY_COMMONORE_GEN, "Enabel tin ore generation", ConfigurationSettings.TIN_ORE_GEN_DEfAULT).getBoolean(ConfigurationSettings.TIN_ORE_GEN_DEfAULT);
+			
+			
 			 
 		 }catch(Exception e) {
 			 FMLLog.log(Level.SEVERE, e, SAMWReference.MOD_NAME + " Has had a issue loading its config");
