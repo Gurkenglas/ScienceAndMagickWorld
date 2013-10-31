@@ -26,7 +26,8 @@ public class SAMWItemID {
 	public static int TIN_INGOT_DEFAULT = 4516;
 	public static int TITANIUM_INGOT_DEFAULT = 4517;
 	public static int SILICON_INGOT_DEFAULT = 4518;
-	public static int PICKAXEHEAD_DEFAULT = 4519;
+	public static int LEAD_INGOT_DEFAULTS = 4519;
+	public static int PICKAXEHEAD_DEFAULT = 4520;
 
 
 	/* Current Item IDs */

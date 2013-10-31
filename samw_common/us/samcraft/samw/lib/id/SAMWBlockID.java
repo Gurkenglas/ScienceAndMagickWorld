@@ -18,7 +18,10 @@ public class SAMWBlockID {
 	public static int TIN_ORE_DEFAULT = 3608;
 	public static int TITANIUM_ORE_DEFAULT = 3609;
 	public static int WONDERFLONIUM_ORE_DEFAULT = 3610;
-	public static int CLEARBLOCK_DEC_DEFAULT = 3611;
+	public static int LEAD_ORE_DEFAULT = 3611;
+	
+	public static int CLEARBLOCK_DEC_DEFAULT = 3612;
+
 	public static int LOG_DEFAULT = 3800;
 	public static int LEAVES_DEFAULT = 3801;
 
@@ -35,6 +38,7 @@ public class SAMWBlockID {
 	public static int TIN_ORE;
 	public static int TITANIUM_ORE;
 	public static int WONDERFLONIUM_ORE;
+	public static int LEAD_ORE;
 	public static int LEAVES;
 	public static int CLEAR_DEC;
 

@@ -19,6 +19,7 @@ public class SAMWBNames {
 	public static final String oreRune = "Rune Ore";
 	public static final String oreAdamantium = "Adamantum Ore";
 	public static final String oreAetheriumBlock = "Aetherium Shard Block";
+	public static final String oreLead = "Lead Ore";
 	public static final String oreManaBlock = "Mana Block";
 	public static final String oreSaphireBlock = "Saphire Block"; 
 	public static final String oreGreenSaphireBlock = "GreenSaphire Block";
@@ -28,7 +29,7 @@ public class SAMWBNames {
 	public static final String decClearRock = "Clear Rock";
 	  
 	public static final String crysAetherium = "Aetherium Crystle";
-	 
+/*	 
 	public static final String METALSTORBLOCK = "Metal Storage Block";
 	public static final String METALSTORBLOCK_META_NAME[] = {"Copper Storage Block", "Tin Storage Block", "Silicon Storage Block", "Silver Storage Block", "Orichalcum Storge Block", "StarSteel Storage Block","Titanium Storage Block", "Wonderflonium Storage Block", "Rune Storage Block", "Adamantum Storage Block" };
 	public static final String METALSTORBLCOK_ICONS[] = { "CopperStorageBlock","TinStorageBlock", "SiliconStorageBlock", "SiliverStorageBlock","OrichalcumStorageBlock", "StarSteelStorageBlock", "TitaniumStorageBlock", "WonderfloniumStorageBlock", "RuneStorageBlock", "AdamantumStorageBlock" };
@@ -44,5 +45,5 @@ public class SAMWBNames {
 	public static final String LOGS = "Wood";
 	public static final String LOG_META_NAMES[] = { "Blood Wood", "Silicate Wood", "Arcane Wood", "Dark Wood", "Light Wood", "Balanced Wood", "Blood Wood Planks", "Silicate Wood Planks", "Arcane Wood Planks", "Dark Wood Planks", "Light Wood Planks", "Balanced Wood Planks" };
 	public static final String LOG_ICONS[] = { "BloodWood", "SilicateWood", "ArcaneWood", "DarkWood", "LightWood", "BalancedWood", "BloodWoodPlanks", "SilicateWoodPlanks", "ArcaneWoodPlanks", "DarkWoodPlanks", "LightWoodPlanks", "BalancedWoodPlanks" };
-
+*/
 }

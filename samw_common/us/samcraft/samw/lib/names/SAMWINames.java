@@ -6,7 +6,7 @@ package us.samcraft.samw.lib.names;
  */
 public class SAMWINames {
 	
-	/*Testing Meta*/
+	/*Meta Items*/
 	public static final String GEM = "Gems";
 	public static final String GEM_META_NAME[] = {"Saphire","Dark Saphire", "Amethyst", "Dark Amethyst", "Green Saphire", "Opal", "Dark Opal", "Jade", "Dark Jade", "Dark Diamond","Dark Emerald"};
 	public static final String GEM_ICONS[] = {"Saphire", "DarkSaphire", "Amethyst", "DarkAmethyst", "GreenSaphire", "Opal", "DarkOpal", "Jade", "DarkJade", "DarkDiamond", "DarkEmerald"};
@@ -42,6 +42,7 @@ public class SAMWINames {
 	public static final String AdamantiumIngot = "Adamantium Ingot";
 	public static final String BronzeIngot = "Bronze Ingot";
 	public static final String CopperIngot = "Copper Ingot";
+	public static final String LeadIngot = "Lead Ingot";
 	public static final String ManaIngot = "Mana Ingot";
 	public static final String MithrilIngot = "Mithril Ingot";
 	public static final String OrichalcumIngot = "Orichalcum Ingot";
