@@ -33,7 +33,9 @@ public class BlockBlood extends BlockFluidClassic {
 					((EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.confusion.id, 500));
 					((EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.blindness.id, 500));
 					((EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.hunger.id, 500));
-					((EntityLivingBase)entity).setFire(5);
+					((EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.harm.id, 10));
+					
+					
 			}
 		}
 	}
