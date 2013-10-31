@@ -20,6 +20,7 @@ public class BlockdecClearRock extends Block{
 		this.setCreativeTab(SAMWMain.tabsamw);
 		this.setUnlocalizedName(SAMWBNames.decClearRock);
 		this.setHardness(3F);
+		this.setResistance(900.0F);
 	}
 	@Override
 	public boolean isOpaqueCube(){
