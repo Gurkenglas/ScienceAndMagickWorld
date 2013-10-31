@@ -18,6 +18,7 @@ public class FluidBlood extends Fluid {
         this.setDensity(2000);
         this.setLuminosity(10);
         FluidRegistry.registerFluid(this);
-}
+        
+	}
 
 }
