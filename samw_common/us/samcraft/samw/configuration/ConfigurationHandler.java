@@ -77,11 +77,12 @@ public class ConfigurationHandler {
 			SAMWBlockID.TIN_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreTin, SAMWBlockID.TIN_ORE_DEFAULT).getInt() - 256;
 			SAMWBlockID.TITANIUM_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreTitanium, SAMWBlockID.TITANIUM_ORE_DEFAULT).getInt() - 256;
 			SAMWBlockID.WONDERFLONIUM_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreWonderflonium, SAMWBlockID.WONDERFLONIUM_ORE_DEFAULT).getInt() -256;
+			SAMWBlockID.LEAD_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreLead, SAMWBlockID.ORICHALCUM_ORE_DEFAULT).getInt() -256;
 			
 			SAMWBlockID.CLEAR_DEC = configuration.getBlock(CATAGORY_ORE, SAMWBNames.decClearRock, SAMWBlockID.CLEARBLOCK_DEC_DEFAULT).getInt() -256;//temp place till I get this concept down
 			
 			/* Nature blocks*/
-			SAMWBlockID.LEAVES = configuration.getBlock(CATAGORY_NATUREBLOCK, SAMWBNames.LEAVES, SAMWBlockID.LEAVES_DEFAULT).getInt() - 256;
+			//SAMWBlockID.LEAVES = configuration.getBlock(CATAGORY_NATUREBLOCK, SAMWBNames.LEAVES, SAMWBlockID.LEAVES_DEFAULT).getInt() - 256;
 			
 			/* Ore generation settings */
 			ConfigurationSettings.COMMON_ORE_GEN = configuration.get(CATAGORY_COMMONORE_GEN, "Enabel common ore generation", ConfigurationSettings.COMMON_ORE_GEN_DEFUALT).getBoolean(ConfigurationSettings.COMMON_ORE_GEN_DEFUALT);

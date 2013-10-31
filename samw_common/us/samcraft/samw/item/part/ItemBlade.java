@@ -1,4 +1,4 @@
-package us.samcraft.samw.item;
+package us.samcraft.samw.item.part;
 
 import java.util.List;
 
@@ -16,29 +16,31 @@ import cpw.mods.fml.relauncher.SideOnly;
  * @author Anthony Anderson(LordIlloyhs)
  *
  */
-public class ItemShovelHead extends Item {
+public class ItemBlade extends Item {
 
 	@SideOnly(Side.CLIENT)
 	private Icon[] icons;
 
-	public ItemShovelHead(int id) {
+	public ItemBlade(int id) {
 		super(id);
 		this.setCreativeTab(SAMWMain.tabsamwi);
 		this.setHasSubtypes(true);
 	}
+
 	@Override
 	public String getUnlocalizedName(ItemStack itemstack) {
-		return SAMWINames.SHOVHEAD + itemstack.getItemDamage();
+		return SAMWINames.BLADE + itemstack.getItemDamage();
 	}
 
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister reg) {
-		icons = new Icon[SAMWINames.SHOVEL_ICONS.length];
+		icons = new Icon[SAMWINames.BLADE_ICONS.length];
 		for (int i = 0; i < icons.length; i++) {
-			icons[i] = reg.registerIcon("samw:parts/shovel/" + SAMWINames.MOLD_ICONS[i]);
+			icons[i] = reg.registerIcon("samw:parts/blade/"+ SAMWINames.BLADE_ICONS[i]);
 		}
 	}
+
 	@Override
 	@SideOnly(Side.CLIENT)
 	public Icon getIconFromDamage(int dmg) {
@@ -48,10 +50,9 @@ public class ItemShovelHead extends Item {
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void getSubItems(int id, CreativeTabs tab, List list) {
-		for (int i = 0; i < SAMWINames.SHOVHEAD_META_NAME.length; i++) {
+		for (int i = 0; i < SAMWINames.BLADE_META_NAME.length; i++) {
 			ItemStack stack = new ItemStack(id, 1, i);
 			list.add(stack);
 		}
 	}
-
 }

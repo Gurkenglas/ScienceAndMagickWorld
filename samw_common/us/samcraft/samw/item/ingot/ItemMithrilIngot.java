@@ -1,4 +1,4 @@
-package us.samcraft.samw.item;
+package us.samcraft.samw.item.ingot;
 
 import us.samcraft.samw.SAMWMain;
 import us.samcraft.samw.lib.names.SAMWINames;
@@ -10,16 +10,16 @@ import net.minecraft.item.Item;
  * @author Anthony Anderson(LordIlloyhs)
  *
  */
-public class ItemOrichalcumIngot extends Item {
+public class ItemMithrilIngot extends Item {
 
-	public ItemOrichalcumIngot(int id) {
+	public ItemMithrilIngot(int id) {
 		super(id);
 		this.setCreativeTab(SAMWMain.tabsamwi);
-		this.setUnlocalizedName(SAMWINames.OrichalcumIngot);
+		this.setUnlocalizedName(SAMWINames.MithrilIngot);
 	}
 	@Override
 	public void registerIcons(IconRegister reg) {
-		this.itemIcon = reg.registerIcon(ModItemIcons.OrichalcumIngot);
+		this.itemIcon = reg.registerIcon(ModItemIcons.MithrilIngot);
 	}
 
 }

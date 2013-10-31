@@ -1,4 +1,4 @@
-package us.samcraft.samw.item;
+package us.samcraft.samw.item.ingot;
 
 import us.samcraft.samw.SAMWMain;
 import us.samcraft.samw.lib.names.SAMWINames;
@@ -10,16 +10,16 @@ import net.minecraft.item.Item;
  * @author Anthony Anderson(LordIlloyhs)
  *
  */
-public class ItemRuneIngot extends Item {
+public class ItemSteelIngot extends Item {
 
-	public ItemRuneIngot(int id) {
+	public ItemSteelIngot(int id) {
 		super(id);
 		this.setCreativeTab(SAMWMain.tabsamwi);
-		this.setUnlocalizedName(SAMWINames.RuneIngot);
+		this.setUnlocalizedName(SAMWINames.SteelIngot);
 	}
 	@Override
 	public void registerIcons(IconRegister reg) {
-		this.itemIcon = reg.registerIcon(ModItemIcons.RuneIngot);
+		this.itemIcon = reg.registerIcon(ModItemIcons.SteelIngot);
 	}
 
 }

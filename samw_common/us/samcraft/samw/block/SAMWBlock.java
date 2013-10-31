@@ -5,6 +5,7 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 import us.samcraft.samw.block.clear.BlockdecClearRock;
 import us.samcraft.samw.block.ore.BlockoreAdamantium;
 import us.samcraft.samw.block.ore.BlockoreCopper;
+import us.samcraft.samw.block.ore.BlockoreLead;
 import us.samcraft.samw.block.ore.BlockoreMithril;
 import us.samcraft.samw.block.ore.BlockoreOrichalcum;
 import us.samcraft.samw.block.ore.BlockoreRune;
@@ -27,6 +28,7 @@ public class SAMWBlock {
 	
 	public static Block oreAdamantium;
 	public static Block oreCopper;
+	public static Block oreLead;
 	public static Block oreMithril;
 	public static Block oreOrichalcum;
 	public static Block oreRune;
@@ -45,6 +47,7 @@ public class SAMWBlock {
 		/*Ores*/
 		oreAdamantium = new BlockoreAdamantium(SAMWBlockID.ADAMANTUM_ORE);
 		oreCopper = new BlockoreCopper(SAMWBlockID.COPPER_ORE);
+		oreLead = new BlockoreLead(SAMWBlockID.LEAD_ORE);
 		oreMithril = new BlockoreMithril(SAMWBlockID.MITHRIL_ORE);
 		oreOrichalcum = new BlockoreOrichalcum(SAMWBlockID.ORICHALCUM_ORE);
 		oreRune = new BlockoreRune(SAMWBlockID.RUNE_ORE);
@@ -81,6 +84,7 @@ public class SAMWBlock {
 		GameRegistry.registerBlock(oreTin, SAMWBNames.oreTin);
 		GameRegistry.registerBlock(oreTitanium, SAMWBNames.oreTitanium);
 		GameRegistry.registerBlock(oreWonderflonium, SAMWBNames.oreWonderflonium);
+		GameRegistry.registerBlock(oreLead, SAMWBNames.oreLead);
 		//GameRegistry.registerBlock(Leaves, SAMWBNames.LEAVES);
 		GameRegistry.registerBlock(decClearRock, SAMWBNames.decClearRock);
 		
@@ -97,6 +101,7 @@ public class SAMWBlock {
 		LanguageRegistry.addName(oreTin, SAMWBNames.oreTin);
 		LanguageRegistry.addName(oreTitanium, SAMWBNames.oreTitanium);
 		LanguageRegistry.addName(oreWonderflonium, SAMWBNames.oreWonderflonium);
+		LanguageRegistry.addName(oreLead, SAMWBNames.oreLead);
 		LanguageRegistry.addName(decClearRock, SAMWBNames.decClearRock);
 		
 	}

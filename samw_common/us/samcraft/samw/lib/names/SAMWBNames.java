@@ -29,21 +29,21 @@ public class SAMWBNames {
 	public static final String decClearRock = "Clear Rock";
 	  
 	public static final String crysAetherium = "Aetherium Crystle";
-/*	 
-	public static final String METALSTORBLOCK = "Metal Storage Block";
-	public static final String METALSTORBLOCK_META_NAME[] = {"Copper Storage Block", "Tin Storage Block", "Silicon Storage Block", "Silver Storage Block", "Orichalcum Storge Block", "StarSteel Storage Block","Titanium Storage Block", "Wonderflonium Storage Block", "Rune Storage Block", "Adamantum Storage Block" };
-	public static final String METALSTORBLCOK_ICONS[] = { "CopperStorageBlock","TinStorageBlock", "SiliconStorageBlock", "SiliverStorageBlock","OrichalcumStorageBlock", "StarSteelStorageBlock", "TitaniumStorageBlock", "WonderfloniumStorageBlock", "RuneStorageBlock", "AdamantumStorageBlock" };
-
-	public static final String GEMSTORAGE = "Gem Storage";
-	public static final String GEMSTORAGE_META_NAME[] = {"Saphire Storage Block", "Green Saphire Block","Ruby Storage Block", "Jade Storage Block", "DarkDiamond Storage Block", "DarkEmerald Storage Block" };
-	public static final String GEMSTORAGE_ICONS[] = { "SaphireStorageBlock", "GreenSaphireBlock", "RubyStorageBlock", "JadeStorageBlock", "DarkDiamondStorageBlock", "DarkEmeraldStorageBlock" };
-
+	 
+//	public static final String METALSTORBLOCK = "Metal Storage Block";
+//	public static final String METALSTORBLOCK_META_NAME[] = {"Copper Storage Block", "Tin Storage Block", "Silicon Storage Block", "Silver Storage Block", "Orichalcum Storge Block", "StarSteel Storage Block","Titanium Storage Block", "Wonderflonium Storage Block", "Rune Storage Block", "Adamantum Storage Block" };
+//	public static final String METALSTORBLCOK_ICONS[] = { "CopperStorageBlock","TinStorageBlock", "SiliconStorageBlock", "SiliverStorageBlock","OrichalcumStorageBlock", "StarSteelStorageBlock", "TitaniumStorageBlock", "WonderfloniumStorageBlock", "RuneStorageBlock", "AdamantumStorageBlock" };
+//
+//	public static final String GEMSTORAGE = "Gem Storage";
+//	public static final String GEMSTORAGE_META_NAME[] = {"Saphire Storage Block", "Green Saphire Block","Ruby Storage Block", "Jade Storage Block", "DarkDiamond Storage Block", "DarkEmerald Storage Block" };
+//	public static final String GEMSTORAGE_ICONS[] = { "SaphireStorageBlock", "GreenSaphireBlock", "RubyStorageBlock", "JadeStorageBlock", "DarkDiamondStorageBlock", "DarkEmeraldStorageBlock" };
+//
 	public static final String LEAVES = "Leaves";
 	public static final String LEAVES_META_NAMES[] = { "Blood Leaves", "Silicon Leaves" };
 	public static final String LEAVES_ICONS[] = { "BloodLeaves", "SiliconLeaves" };
+//
+//	public static final String LOGS = "Wood";
+//	public static final String LOG_META_NAMES[] = { "Blood Wood", "Silicate Wood", "Arcane Wood", "Dark Wood", "Light Wood", "Balanced Wood", "Blood Wood Planks", "Silicate Wood Planks", "Arcane Wood Planks", "Dark Wood Planks", "Light Wood Planks", "Balanced Wood Planks" };
+//	public static final String LOG_ICONS[] = { "BloodWood", "SilicateWood", "ArcaneWood", "DarkWood", "LightWood", "BalancedWood", "BloodWoodPlanks", "SilicateWoodPlanks", "ArcaneWoodPlanks", "DarkWoodPlanks", "LightWoodPlanks", "BalancedWoodPlanks" };
 
-	public static final String LOGS = "Wood";
-	public static final String LOG_META_NAMES[] = { "Blood Wood", "Silicate Wood", "Arcane Wood", "Dark Wood", "Light Wood", "Balanced Wood", "Blood Wood Planks", "Silicate Wood Planks", "Arcane Wood Planks", "Dark Wood Planks", "Light Wood Planks", "Balanced Wood Planks" };
-	public static final String LOG_ICONS[] = { "BloodWood", "SilicateWood", "ArcaneWood", "DarkWood", "LightWood", "BalancedWood", "BloodWoodPlanks", "SilicateWoodPlanks", "ArcaneWoodPlanks", "DarkWoodPlanks", "LightWoodPlanks", "BalancedWoodPlanks" };
-*/
 }

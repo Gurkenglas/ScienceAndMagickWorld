@@ -1,4 +1,4 @@
-package us.samcraft.samw.item;
+package us.samcraft.samw.item.ingot;
 
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.Item;
