@@ -12,6 +12,7 @@ public class ModBlockIcons {
 	
 	public static final String oreAdamantium = ORE + "Adamantium";
 	public static final String oreCopper = ORE + "Copper";
+	public static final String oreLead = ORE + "Lead";
 	public static final String oreMithril = ORE + "Mithril";
 	public static final String oreOrichalcum = ORE + "Orichalcum";
 	public static final String oreRune = ORE + "Rune";
