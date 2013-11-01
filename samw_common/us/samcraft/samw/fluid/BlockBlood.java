@@ -1,9 +1,11 @@
 package us.samcraft.samw.fluid;
 
+import us.samcraft.samw.lib.textures.ModBlockIcons;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.potion.Potion;
@@ -33,12 +35,19 @@ public class BlockBlood extends BlockFluidClassic {
 					((EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.confusion.id, 500));
 					((EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.blindness.id, 500));
 					((EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.hunger.id, 500));
-					((EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.harm.id, 10));
+//					((EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.harm.id, 10));
 					
 					
 			}
 		}
 	}
+	
+//	@Override
+//  @SideOnly(Side.CLIENT)
+//	public Icon getStillIcon(){
+//		
+//  }
+
 	
 	@Override
 	@SideOnly(Side.CLIENT)

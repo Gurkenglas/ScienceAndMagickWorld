@@ -1,5 +1,6 @@
 package us.samcraft.samw.fluid;
 
+import us.samcraft.samw.lib.names.SAMWBNames;
 import us.samcraft.samw.lib.names.SAMWFNames;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
