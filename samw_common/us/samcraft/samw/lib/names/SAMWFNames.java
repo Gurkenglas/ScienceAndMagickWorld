@@ -6,6 +6,7 @@ package us.samcraft.samw.lib.names;
  */
 public class SAMWFNames {
 	
-	public static  final String Blood = "Blood";
+	public static final String Blood = "Blood";
+	public static final String HeavyWater = "Heavy Water"; 
 
 }
