@@ -8,8 +8,8 @@ public class SAMWINames {
 	
 	/*Meta Items*/
 	public static final String GEM = "Gems";
-	public static final String GEM_META_NAME[] = {"Saphire","Dark Saphire", "Amethyst", "Dark Amethyst", "Green Saphire", "Opal", "Dark Opal", "Jade", "Dark Jade", "Dark Diamond","Dark Emerald"};
-	public static final String GEM_ICONS[] = {"Saphire", "DarkSaphire", "Amethyst", "DarkAmethyst", "GreenSaphire", "Opal", "DarkOpal", "Jade", "DarkJade", "DarkDiamond", "DarkEmerald"};
+	public static final String GEM_META_NAME[] = {"Sapphire","Dark Saphire", "Amethyst", "Dark Amethyst", "Green Saphire", "Opal", "Dark Opal", "Jade", "Dark Jade", "Dark Diamond","Dark Emerald"};
+	public static final String GEM_ICONS[] = {"Sapphire", "DarkSaphire", "Amethyst", "DarkAmethyst", "GreenSaphire", "Opal", "DarkOpal", "Jade", "DarkJade", "DarkDiamond", "DarkEmerald"};
 
 	public static final String MOLD = "Molds";
 	public static final String MOLD_META_NAME[] = {"Uncast Mold", "Uncast Axe Mold", "Uncast Blade Mold", "Uncast Pickaxe Mold", "Uncast Scythe Mold", "Uncast Shovel Mold", "Axe Mold", "Blade Mold", "Pickaxe Mold", "Scythe Mold", "Shovel Mold"};
