@@ -33,7 +33,7 @@ public class BlockBlood extends BlockFluidClassic {
 		if(!world.isRemote){
 			if(entity instanceof EntityLivingBase){
 				if(((EntityLivingBase)entity).isCollided)
-					((EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.confusion.id, 500));
+					((EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.confusion.id, 500, 3));
 					((EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.blindness.id, 500));
 					((EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.hunger.id, 500));
 //					((EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.harm.id, 10));

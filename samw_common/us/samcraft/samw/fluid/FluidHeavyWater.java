@@ -11,7 +11,7 @@ import net.minecraftforge.fluids.FluidRegistry;
 public class FluidHeavyWater extends Fluid {
 
 	public FluidHeavyWater() {
-		super(SAMWFNames.HeavyWater);
+		super(SAMWFNames.Heavy);
 		this.setDensity(100);
 		this.setViscosity(10);
 		this.setTemperature(300);

@@ -85,7 +85,9 @@ public class ConfigurationHandler {
 			SAMWBlockID.LEAD_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreLead, SAMWBlockID.ORICHALCUM_ORE_DEFAULT).getInt() -256;
 			
 			/*Fluids*/
-			SAMWFluidID.BLOOD = configuration.getBlock(CATAGORY_FLUID, SAMWFNames.Blood, SAMWFluidID.BLOOD_DEFAULT).getInt() ;
+			SAMWFluidID.BLOOD = configuration.getBlock(CATAGORY_FLUID, SAMWFNames.Blood, SAMWFluidID.BLOOD_DEFAULT).getInt();
+			SAMWFluidID.HEAVY = configuration.getBlock(CATAGORY_FLUID, SAMWFNames.Heavy, SAMWFluidID.HEAVY_DEFAULT).getInt();
+			SAMWFluidID.PINK = configuration.getBlock(CATAGORY_FLUID, SAMWFNames.Pink, SAMWFluidID.PINK_DEFAULT).getInt();
 			
 			SAMWBlockID.CLEAR_DEC = configuration.getBlock(CATAGORY_ORE, SAMWBNames.decClearRock, SAMWBlockID.CLEARBLOCK_DEC_DEFAULT).getInt() -256;//temp place till I get this concept down
 			
