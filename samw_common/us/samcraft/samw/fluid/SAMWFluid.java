@@ -17,11 +17,13 @@ public class SAMWFluid {
 	 public static Block BlockHeavyWater;
 	 public static Block BlockPinkWater;
 	 public static Block BlockYellowWater;
+	 public static Block BlockGreenWater;
      
      public static Fluid Blood;
      public static Fluid HeavyWater;
      public static Fluid PinkWater;
      public static Fluid YellowWater;
+     public static Fluid GreenWater;
 
      public static void init() {
              
@@ -29,11 +31,13 @@ public class SAMWFluid {
              HeavyWater = new FluidHeavyWater();
              PinkWater = new FluidPinkWater();
              YellowWater = new FluidYellowWater();
+             GreenWater = new FluidGreenWater();
              
              BloodBlock = new BlockBlood(SAMWFluidID.BLOOD);
              BlockHeavyWater = new BlockHeavyWater(SAMWFluidID.HEAVY);
              BlockPinkWater = new BlockPinkWater(SAMWFluidID.PINK);
              BlockYellowWater = new BlockYellowWater(SAMWFluidID.YELLOW);
+             BlockGreenWater = new BlockGreenWater(SAMWFluidID.GREEN);
              
              GameReg();
              LangReg();
@@ -44,6 +48,7 @@ public class SAMWFluid {
              GameRegistry.registerBlock(BlockHeavyWater, SAMWFNames.Heavy);
              GameRegistry.registerBlock(BlockPinkWater, SAMWFNames.Pink);
              GameRegistry.registerBlock(BlockYellowWater, SAMWFNames.Yellow);
+             GameRegistry.registerBlock(BlockGreenWater, SAMWFNames.Green);
              
      }
 
@@ -52,6 +57,7 @@ public class SAMWFluid {
              LanguageRegistry.addName(BlockHeavyWater, SAMWFNames.Heavy);
              LanguageRegistry.addName(BlockPinkWater, SAMWFNames.Pink);
              LanguageRegistry.addName(BlockYellowWater, SAMWFNames.Yellow);
+             LanguageRegistry.addName(BlockGreenWater, SAMWFNames.Green);
              
      }
 

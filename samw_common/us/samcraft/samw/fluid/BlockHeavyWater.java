@@ -1,5 +1,6 @@
 package us.samcraft.samw.fluid;
 
+import us.samcraft.samw.lib.names.SAMWFNames;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -21,7 +22,7 @@ public class BlockHeavyWater extends BlockFluidClassic {
 
 	public BlockHeavyWater(int id) {
 		super(id, SAMWFluid.HeavyWater, Material.water);
-		this.setUnlocalizedName("Heavy Water");
+		this.setUnlocalizedName(SAMWFNames.Heavy);
 		
 	}
 	@Override
