@@ -33,7 +33,7 @@ public class BlockPinkWater extends BlockFluidClassic {
 		if(!world.isRemote){
 			if(entity instanceof EntityLivingBase){
 				if(((EntityLivingBase)entity).isCollided)
-					((EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.regeneration.id, 100));
+					((EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.regeneration.id, 10));
 					
 			}
 		}

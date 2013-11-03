@@ -1,29 +1,30 @@
 package us.samcraft.samw.fluid;
 
-import us.samcraft.samw.lib.textures.ModBlockIcons;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import us.samcraft.samw.lib.names.SAMWFNames;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.Icon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.BlockFluidClassic;
+import net.minecraftforge.fluids.Fluid;
 
 /**
  * @author Anthony Anderson(LordIllyohs)
  *
  */
-public class BlockBlood extends BlockFluidClassic {
-	
-	public BlockBlood(int id) {
-        super(id, SAMWFluid.Blood, Material.water);
-        this.setUnlocalizedName("Blood");
+public class BlockYellowWater extends BlockFluidClassic {
+
+	public BlockYellowWater(int id) {
+		super(id, SAMWFluid.YellowWater, Material.water);
+		this.setUnlocalizedName(SAMWFNames.Yellow);
 	}
 	@Override
     public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity) {
@@ -33,23 +34,13 @@ public class BlockBlood extends BlockFluidClassic {
 		if(!world.isRemote){
 			if(entity instanceof EntityLivingBase){
 				if(((EntityLivingBase)entity).isCollided)
-					((EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.confusion.id, 500, 3));
-					((EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.blindness.id, 600));
-					((EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.hunger.id, 500));
-//					((EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.harm.id, 10));
+					world.spawnEntityInWorld(new EntityLightningBolt(world,x,y,z ));
+					((EntityLivingBase) entity).setHealth(2);
 					
 					
 			}
 		}
 	}
-	
-//	@Override
-//  @SideOnly(Side.CLIENT)
-//	public Icon getStillIcon(){
-//		
-//  }
-
-	
 	@Override
 	@SideOnly(Side.CLIENT)
 	public Icon getIcon(int side, int meta) {
@@ -58,7 +49,7 @@ public class BlockBlood extends BlockFluidClassic {
 	
 	@Override
 	public int colorMultiplier(IBlockAccess iblockaccess, int x, int y, int z){
-		return 0xFF0000;
+		return 0xFFFF00;
 	}
 
 }
