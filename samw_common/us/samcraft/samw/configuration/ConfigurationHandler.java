@@ -4,12 +4,12 @@ import java.io.File;
 import java.util.logging.Level;
 
 import net.minecraftforge.common.Configuration;
+import us.samcraft.samw.fluid.*;
 import us.samcraft.samw.lib.SAMWReference;
 import us.samcraft.samw.lib.id.SAMWBlockID;
 import us.samcraft.samw.lib.id.SAMWFluidID;
 import us.samcraft.samw.lib.id.SAMWItemID;
 import us.samcraft.samw.lib.names.SAMWBNames;
-import us.samcraft.samw.lib.names.SAMWFNames;
 import us.samcraft.samw.lib.names.SAMWINames;
 import cpw.mods.fml.common.FMLLog;
 
@@ -85,11 +85,11 @@ public class ConfigurationHandler {
 			SAMWBlockID.LEAD_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreLead, SAMWBlockID.ORICHALCUM_ORE_DEFAULT).getInt() -256;
 			
 			/*Fluids*/
-			SAMWFluidID.BLOOD = configuration.getBlock(CATAGORY_FLUID, SAMWFNames.Blood, SAMWFluidID.BLOOD_DEFAULT).getInt();
-			SAMWFluidID.HEAVY = configuration.getBlock(CATAGORY_FLUID, SAMWFNames.Heavy, SAMWFluidID.HEAVY_DEFAULT).getInt();
-			SAMWFluidID.PINK = configuration.getBlock(CATAGORY_FLUID, SAMWFNames.Pink, SAMWFluidID.PINK_DEFAULT).getInt();
-			SAMWFluidID.YELLOW = configuration.getBlock(CATAGORY_FLUID, SAMWFNames.Yellow, SAMWFluidID.YELLOW_DEFAULT).getInt();
-			SAMWFluidID.GREEN = configuration.getBlock(CATAGORY_FLUID, SAMWFNames.Green, SAMWFluidID.GREEN_DEFAULT).getInt();
+			Blood.setFluidBlockID(configuration.getBlock(CATAGORY_FLUID, "Blood", SAMWFluidID.BLOOD_DEFAULT).getInt());
+			HeavyWater.setFluidBlockID(configuration.getBlock(CATAGORY_FLUID, "Heavy Water", SAMWFluidID.HEAVY_DEFAULT).getInt());
+			PinkWater.setFluidBlockID(configuration.getBlock(CATAGORY_FLUID, "PinkWater", SAMWFluidID.PINK_DEFAULT).getInt());
+			YellowWater.setFluidBlockID(configuration.getBlock(CATAGORY_FLUID, "Charged Water", SAMWFluidID.YELLOW_DEFAULT).getInt());
+			GreenWater.setFluidBlockID(configuration.getBlock(CATAGORY_FLUID, "Hungry Water", SAMWFluidID.GREEN_DEFAULT).getInt());
 			
 			SAMWBlockID.CLEAR_DEC = configuration.getBlock(CATAGORY_ORE, SAMWBNames.decClearRock, SAMWBlockID.CLEARBLOCK_DEC_DEFAULT).getInt() -256;//temp place till I get this concept down
 			

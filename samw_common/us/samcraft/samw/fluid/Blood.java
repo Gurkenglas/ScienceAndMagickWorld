@@ -1,14 +1,8 @@
 package us.samcraft.samw.fluid;
 
-import us.samcraft.samw.lib.names.SAMWFNames;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
-import net.minecraft.util.Icon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
@@ -16,14 +10,12 @@ import net.minecraft.world.World;
  * @author Anthony Anderson(LordIllyohs)
  *
  */
-public class BlockBlood extends BlockFluidSAMW {
-	
-	public BlockBlood(int id) {
-        super(id, SAMWFluid.Blood, Material.water);
-        this.setUnlocalizedName(SAMWFNames.Blood);
+public class Blood extends FluidSAMW {
+	public Blood() {
+        super("Blood");
 	}
 	
-	protected void onPlayerCollidedWithBlock(World world, int x,
+	protected void onPlayerCollision(World world, int x,
 			int y, int z, EntityLivingBase entity, int meta) {
 		entity.addPotionEffect(new PotionEffect(Potion.confusion.id, 500, 3));
 		entity.addPotionEffect(new PotionEffect(Potion.blindness.id, 600));
@@ -31,22 +23,27 @@ public class BlockBlood extends BlockFluidSAMW {
 //		entity.addPotionEffect(new PotionEffect(Potion.harm.id, 10));
 	}
 	
-//	@Override
-//  @SideOnly(Side.CLIENT)
-//	public Icon getStillIcon(){
-//		
-//  }
-
-	
-	@Override
-	@SideOnly(Side.CLIENT)
-	public Icon getIcon(int side, int meta) {
-		return Block.waterMoving.getIcon(side, meta);
-	}
-	
 	@Override
 	public int colorMultiplier(IBlockAccess iblockaccess, int x, int y, int z){
 		return 0xFF0000;
 	}
 
+	public void setFluidProperties() {
+		setViscosity(2000);
+		setTemperature(310);
+		setDensity(2000);
+		setLuminosity(10);
+	}
+
+	// Copypaste into each Fluid until 1.7's ID update
+	public static int fluidblockid;
+
+	@Override
+	public int getFluidBlockID() {
+		return fluidblockid;
+	}
+
+	public static void setFluidBlockID(int id) {
+		fluidblockid = id;
+	}
 }
