@@ -17,9 +17,9 @@ import net.minecraftforge.fluids.BlockFluidClassic;
  * @author Anthony Anderson(LordIllyohs)
  *
  */
-public class BockHeavyWater extends BlockFluidClassic {
+public class BlockHeavyWater extends BlockFluidClassic {
 
-	public BockHeavyWater(int id) {
+	public BlockHeavyWater(int id) {
 		super(id, SAMWFluid.HeavyWater, Material.water);
 		this.setUnlocalizedName("Heavy Water");
 		
