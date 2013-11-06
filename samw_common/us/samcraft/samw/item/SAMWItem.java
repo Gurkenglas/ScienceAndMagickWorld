@@ -14,6 +14,7 @@ import us.samcraft.samw.lib.id.SAMWBlockID;
 import us.samcraft.samw.lib.id.SAMWItemID;
 import us.samcraft.samw.lib.names.SAMWINames;
 import us.samcraft.samw.lib.textures.ModBlockIcons;
+import us.samcraft.samw.lib.textures.ModItemIcons;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 /**
@@ -45,21 +46,36 @@ public class SAMWItem {
 		ShovelHead = new ItemShovelHead(SAMWItemID.SHOVELHEAD );
 
 		/* Regular items */
-		new Ingot(SAMWItemID.ADAMANTIUM_INGOT, "Adamantium Ingot" , ""         , ""           , SAMWBlockID.ADAMANTIUM_ORE , "Adamantium Ore",  10F, ModBlockIcons.oreAdamantium , 0.7F);
-		new Ingot(SAMWItemID.COPPER_INGOT,     "Copper Ingot"     , ""         , "oreCopper"  , SAMWBlockID.COPPER_ORE     , "Copper Ore"    ,  3F,  ModBlockIcons.oreCopper     , 0.3F);
-		new Ingot(SAMWItemID.MITHRIL_INGOT,    "Mithril Ingot"    , ""         , ""           , SAMWBlockID.MITHRIL_ORE    , "Mithril Ore"   ,  8F,  ModBlockIcons.oreMithril    , 0.6F);
-		new Ingot(SAMWItemID.ORICHALCUM_INGOT, "Orichalcum Ingot" , ""         , ""           , SAMWBlockID.ORICHALCUM_ORE , "Orichalcum Ore",  7F,  ModBlockIcons.oreOrichalcum , 0.9F);
-		new Ingot(SAMWItemID.RUNE_INGOT,       "Rune Ingot"       , ""         , ""           , SAMWBlockID.RUNE_ORE       , "Rune Ore"      ,  9F,  ModBlockIcons.oreRune       , 0.7F);
-		new Ingot(SAMWItemID.SILICON_INGOT,    "Silicon Ingot"    , ""         , "oreSilicon" , SAMWBlockID.SILICON_ORE    , "Silicon Ore"   ,  4F,  ModBlockIcons.oreSilicon    , 0.4F);
-		new Ingot(SAMWItemID.SILVER_INGOT,     "Silver Ingot"     , ""         , "oreSilver"  , SAMWBlockID.SILVER_ORE     , "Silver Ore"    ,  4F,  ModBlockIcons.oreSilver     , 0.5F);
-		new Ingot(SAMWItemID.TIN_INGOT,        "Tin Ingot"        , ""         , "oreTin"     , SAMWBlockID.TIN_ORE        , "Tin Ore"       ,  4F,  ModBlockIcons.oreTin        , 0.3F);
-		new Ingot(SAMWItemID.TITANIUM_INGOT,   "Titanium Ingot"   , ""         , "oreTitanium", SAMWBlockID.TITANIUM_ORE   , "Titanium Ore"  ,  7F,  ModBlockIcons.oreTitanium   , 0.9F);
-		new Ingot(SAMWItemID.BRONZE_INGOT,     "BronzeIngot"      , ""         );      
-		new Ingot(SAMWItemID.MANA_INGOT,       "ManaIngot"        , ""         );          
-		new Ingot(SAMWItemID.STARSTEEL_INGOT,  "StarSteelIngot"   , ""         );
-		new Ingot(SAMWItemID.STEEL_INGOT,      "SteelIngot"       , ""         );        
+		new Ingot(SAMWItemID.ADAMANTIUM_INGOT, "Adamantium Ingot", ModItemIcons.AdamantiumIngot, ""              , ""           , SAMWBlockID.ADAMANTIUM_ORE , "Adamantium Ore",  10F, ModBlockIcons.oreAdamantium , 0.7F);
+		new Ingot(SAMWItemID.COPPER_INGOT,     "Copper Ingot"    , ModItemIcons.CopperIngot    , "ingotCopper"   , "oreCopper"  , SAMWBlockID.COPPER_ORE     , "Copper Ore"    ,  3F,  ModBlockIcons.oreCopper     , 0.3F);
+		new Ingot(SAMWItemID.MITHRIL_INGOT,    "Mithril Ingot"   , ModItemIcons.MithrilIngot   , ""              , ""           , SAMWBlockID.MITHRIL_ORE    , "Mithril Ore"   ,  8F,  ModBlockIcons.oreMithril    , 0.6F);
+		new Ingot(SAMWItemID.ORICHALCUM_INGOT, "Orichalcum Ingot", ModItemIcons.OrichalcumIngot, ""              , ""           , SAMWBlockID.ORICHALCUM_ORE , "Orichalcum Ore",  7F,  ModBlockIcons.oreOrichalcum , 0.9F);
+		new Ingot(SAMWItemID.RUNE_INGOT,       "Rune Ingot"      , ModItemIcons.RuneIngot      , ""              , ""           , SAMWBlockID.RUNE_ORE       , "Rune Ore"      ,  9F,  ModBlockIcons.oreRune       , 0.7F);
+		new Ingot(SAMWItemID.SILICON_INGOT,    "Silicon Ingot"   , ModItemIcons.SiliconIngot   , "ingotSilicon"  , "oreSilicon" , SAMWBlockID.SILICON_ORE    , "Silicon Ore"   ,  4F,  ModBlockIcons.oreSilicon    , 0.4F);
+		new Ingot(SAMWItemID.SILVER_INGOT,     "Silver Ingot"    , ModItemIcons.SilverIngot    , "ingotSilver"   , "oreSilver"  , SAMWBlockID.SILVER_ORE     , "Silver Ore"    ,  4F,  ModBlockIcons.oreSilver     , 0.5F);
+		new Ingot(SAMWItemID.TIN_INGOT,        "Tin Ingot"       , ModItemIcons.TinIngot       , "ingotTin"      , "oreTin"     , SAMWBlockID.TIN_ORE        , "Tin Ore"       ,  4F,  ModBlockIcons.oreTin        , 0.3F);
+		new Ingot(SAMWItemID.TITANIUM_INGOT,   "Titanium Ingot"  , ModItemIcons.TitaniumIngot  , "ingotTitanium" , "oreTitanium", SAMWBlockID.TITANIUM_ORE   , "Titanium Ore"  ,  7F,  ModBlockIcons.oreTitanium   , 0.9F);
+		new Ingot(SAMWItemID.BRONZE_INGOT,     "BronzeIngot"     , ModItemIcons.BronzeIngot    , "ingotBronze"   );      
+		new Ingot(SAMWItemID.MANA_INGOT,       "ManaIngot"       , ModItemIcons.ManaIngot      , ""              );          
+		new Ingot(SAMWItemID.STARSTEEL_INGOT,  "StarSteelIngot"  , ModItemIcons.StarSteelIngot , ""              );
+		new Ingot(SAMWItemID.STEEL_INGOT,      "SteelIngot"      , ModItemIcons.SteelIngot     , "ingotSteel"    );        
 		MetaItems();
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	private static void MetaItems() {
 		/* Axe head */

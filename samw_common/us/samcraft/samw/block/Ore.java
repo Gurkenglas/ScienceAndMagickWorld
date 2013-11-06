@@ -9,6 +9,8 @@ import us.samcraft.samw.lib.names.SAMWBNames;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class Ore extends Block {
 
@@ -18,13 +20,14 @@ public class Ore extends Block {
 		super(id, Material.rock);
 		setCreativeTab(SAMWMain.tabsamw);
 		setUnlocalizedName(SAMWBNames.oreAdamantium);
-		setHardness(hardness);
 		this.path = path;
 		SAMWBlock.ores.put(name,this);
 		GameRegistry.registerBlock(this, name);
 		LanguageRegistry.addName(this, name);
-		if(dictname!="");
-//		OreDictionary.registerOre("oreCopper", new ItemStack(SAMWBlock.oreCopper)); TODO
+		if(dictname!="")
+			OreDictionary.registerOre(dictname, new ItemStack(this));
+
+		setHardness(hardness);
 	}
 
 	@SideOnly(Side.CLIENT)
