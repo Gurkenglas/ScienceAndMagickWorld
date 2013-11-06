@@ -23,8 +23,8 @@ public class SAMWFluid {
 		blocks.add(new BlockFluidSAMW(new GreenWater()));
 		
 		for (BlockFluidSAMW block : blocks)
-			GameRegistry.registerBlock(block, block.fluid.getUnlocalizedName());
+			GameRegistry.registerBlock(block, block.fluid.getSAMWName());
 		for (BlockFluidSAMW block : blocks)
-			LanguageRegistry.addName(block, block.fluid.getUnlocalizedName());
+			LanguageRegistry.addName(block, block.fluid.getSAMWName());
 	}
 }

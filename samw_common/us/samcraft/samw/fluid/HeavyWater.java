@@ -12,7 +12,7 @@ import net.minecraft.world.World;
  */
 public class HeavyWater extends FluidSAMW {
 	public HeavyWater() {
-		super("HeavyWater");
+		super("Heavy Water");
 	}
 
 	protected void onPlayerCollision(World world, int x, int y, int z,
@@ -31,6 +31,11 @@ public class HeavyWater extends FluidSAMW {
 		setViscosity(10);
 		setTemperature(300);
 		setLuminosity(5);
+	}
+
+	@Override
+	public String getSAMWName() {
+		return "Heavy Water";
 	}
 
 	// Copypaste into each Fluid until 1.7's ID update

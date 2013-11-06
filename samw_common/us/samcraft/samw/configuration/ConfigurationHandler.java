@@ -21,7 +21,7 @@ public class ConfigurationHandler {
 	
 	public static Configuration configuration;
 	
-	public static final String CATEGORY_INGOT = "Ingots";
+	public static final String CATEGORY_INGOT                         = "Ingot     s";
 	public static final String CATEGORY_PART = "Parts";
 	public static final String CATAGORY_ORE = "Ores";
 	public static final String CATAGORY_NATUREBLOCK = "Nature";
@@ -38,7 +38,7 @@ public class ConfigurationHandler {
 			configuration.load();
 			
 			/* Custom categories */
-			configuration.addCustomCategoryComment(CATEGORY_INGOT, null);
+			configuration.addCustomCategoryComment(CATEGORY_INGOT                        , null);
 			configuration.addCustomCategoryComment(CATEGORY_PART, null);
 			configuration.addCustomCategoryComment(CATAGORY_ORE, null);
 			configuration.addCustomCategoryComment(CATAGORY_NATUREBLOCK, null);
@@ -57,28 +57,28 @@ public class ConfigurationHandler {
 			SAMWItemID.PICKAXEHEAD = configuration.getItem(CATEGORY_PART, SAMWINames.PAXEHEAD, SAMWItemID.PICKAXEHEAD_DEFAULT).getInt() - 256;
 			
 			/* Regular Items */
-			SAMWItemID.ADAMANTIUM_INGOT = configuration.getItem(CATEGORY_INGOT, SAMWINames.AdamantiumIngot, SAMWItemID.ADAMANTIUM_INGOT_DEFAULT).getInt() - 256;
-			SAMWItemID.BRONZE_INGOT = configuration.getItem(CATEGORY_INGOT, SAMWINames.BronzeIngot, SAMWItemID.BRONZE_INGOT_DEFAULT).getInt() - 256;
-			SAMWItemID.COPPER_INGOT = configuration.getItem(CATEGORY_INGOT, SAMWINames.CopperIngot, SAMWItemID.COPPER_INGOT_DEFAULT).getInt() - 256;
-			SAMWItemID.MANA_INGOT = configuration.getItem(CATEGORY_INGOT, SAMWINames.ManaIngot, SAMWItemID.MANA_INGOT_DEFAULT).getInt() - 256;
-			SAMWItemID.MITHRIL_INGOT = configuration.getItem(CATEGORY_INGOT, SAMWINames.MithrilIngot, SAMWItemID.MITHRIL_INGOT_DEFAULT).getInt() - 256;
-			SAMWItemID.ORICHALCUM_INGOT = configuration.getItem(CATEGORY_INGOT, SAMWINames.OrichalcumIngot, SAMWItemID.ORICHALCUM_INGOT_DEFAULT).getInt() - 256;
-			SAMWItemID.RUNE_INGOT = configuration.getItem(CATEGORY_INGOT, SAMWINames.RuneIngot, SAMWItemID.RUNE_INGOT_DEFAULT).getInt() - 256;
-			SAMWItemID.SILICON_INGOT = configuration.getItem(CATEGORY_INGOT, SAMWINames.SiliconIngot, SAMWItemID.SILICON_INGOT_DEFAULT).getInt() - 256;
-			SAMWItemID.SILVER_INGOT = configuration.getItem(CATEGORY_INGOT, SAMWINames.SiliverIngot, SAMWItemID.SILVER_INGOT_DEFAULT).getInt() - 256;
-			SAMWItemID.STARSTEEL_INGOT = configuration.getItem(CATEGORY_INGOT, SAMWINames.StartSteelIngot, SAMWItemID.STARSTEEL_INGOT_DEFAULT).getInt() - 256;
-			SAMWItemID.STEEL_INGOT = configuration.getItem(CATEGORY_INGOT, SAMWINames.SteelIngot, SAMWItemID.STEEL_INGOT_DEFAULT).getInt() - 256;
-			SAMWItemID.TITANIUM_INGOT = configuration.getItem(CATEGORY_INGOT, SAMWINames.TitaniumIngot, SAMWItemID.TITANIUM_INGOT_DEFAULT).getInt() - 256;
-			SAMWItemID.TIN_INGOT = configuration.getItem(CATEGORY_INGOT, SAMWINames.TinIngot, SAMWItemID.TIN_INGOT_DEFAULT).getInt() - 256;
+			SAMWItemID.ADAMANTIUM_INGOT = configuration.getItem(CATEGORY_INGOT, "Adamantium Ingot"  , SAMWItemID.ADAMANTIUM_INGOT_DEFAULT ).getInt() - 256;
+			SAMWItemID.COPPER_INGOT     = configuration.getItem(CATEGORY_INGOT, "Copper Ingot"      , SAMWItemID.COPPER_INGOT_DEFAULT     ).getInt() - 256;
+			SAMWItemID.MITHRIL_INGOT    = configuration.getItem(CATEGORY_INGOT, "Mithril Ingot"     , SAMWItemID.MITHRIL_INGOT_DEFAULT    ).getInt() - 256;
+			SAMWItemID.ORICHALCUM_INGOT = configuration.getItem(CATEGORY_INGOT, "Orichalcum Ingot"  , SAMWItemID.ORICHALCUM_INGOT_DEFAULT ).getInt() - 256;
+			SAMWItemID.RUNE_INGOT       = configuration.getItem(CATEGORY_INGOT, "Rune Ingot"        , SAMWItemID.RUNE_INGOT_DEFAULT       ).getInt() - 256;
+			SAMWItemID.SILICON_INGOT    = configuration.getItem(CATEGORY_INGOT, "Silicon Ingot"     , SAMWItemID.SILICON_INGOT_DEFAULT    ).getInt() - 256;
+			SAMWItemID.SILVER_INGOT     = configuration.getItem(CATEGORY_INGOT, "Silver Ingot"      , SAMWItemID.SILVER_INGOT_DEFAULT     ).getInt() - 256;
+			SAMWItemID.TIN_INGOT        = configuration.getItem(CATEGORY_INGOT, "Tin Ingot"         , SAMWItemID.TIN_INGOT_DEFAULT        ).getInt() - 256;
+			SAMWItemID.TITANIUM_INGOT   = configuration.getItem(CATEGORY_INGOT, "Titanium Ingot"    , SAMWItemID.TITANIUM_INGOT_DEFAULT   ).getInt() - 256;
+			SAMWItemID.BRONZE_INGOT     = configuration.getItem(CATEGORY_INGOT, "BronzeIngot"       , SAMWItemID.BRONZE_INGOT_DEFAULT     ).getInt() - 256;
+			SAMWItemID.MANA_INGOT       = configuration.getItem(CATEGORY_INGOT, "ManaIngot"         , SAMWItemID.MANA_INGOT_DEFAULT       ).getInt() - 256;
+			SAMWItemID.STARSTEEL_INGOT  = configuration.getItem(CATEGORY_INGOT, "StarSteelIngot"    , SAMWItemID.STARSTEEL_INGOT_DEFAULT  ).getInt() - 256;
+			SAMWItemID.STEEL_INGOT      = configuration.getItem(CATEGORY_INGOT, "SteelIngot"        , SAMWItemID.STEEL_INGOT_DEFAULT      ).getInt() - 256;
 			
 			/* ores */
-			SAMWBlockID.ADAMANTUM_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreAdamantium, SAMWBlockID.ADAMANTUM_ORE_DEFAULT).getInt() - 256;
+			SAMWBlockID.ADAMANTIUM_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreAdamantium, SAMWBlockID.ADAMANTIUM_ORE_DEFAULT).getInt() - 256;
 			SAMWBlockID.COPPER_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreCopper, SAMWBlockID.COPPER_ORE_DEFAULT).getInt() - 256;
 			SAMWBlockID.MITHRIL_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreMithril, SAMWBlockID.MITHRIL_ORE_DEFAULT).getInt() - 256;
 			SAMWBlockID.ORICHALCUM_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreOrichalcum, SAMWBlockID.ORICHALCUM_ORE_DEFAULT).getInt() - 256;
 			SAMWBlockID.RUNE_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreRune, SAMWBlockID.RUNE_ORE_DEFAULT).getInt() - 256;
 			SAMWBlockID.SILICON_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreSilicon, SAMWBlockID.SILICON_ORE_DEFAULT).getInt() - 256;
-			SAMWBlockID.SILIVER_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreSilver, SAMWBlockID.SILIVER_ORE_DEFAULT).getInt() - 256;
+			SAMWBlockID.SILVER_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreSilver, SAMWBlockID.SILVER_ORE_DEFAULT).getInt() - 256;
 			SAMWBlockID.TIN_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreTin, SAMWBlockID.TIN_ORE_DEFAULT).getInt() - 256;
 			SAMWBlockID.TITANIUM_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreTitanium, SAMWBlockID.TITANIUM_ORE_DEFAULT).getInt() - 256;
 			SAMWBlockID.WONDERFLONIUM_ORE = configuration.getBlock(CATAGORY_ORE, SAMWBNames.oreWonderflonium, SAMWBlockID.WONDERFLONIUM_ORE_DEFAULT).getInt() -256;

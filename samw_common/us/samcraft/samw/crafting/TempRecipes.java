@@ -19,7 +19,7 @@ public class TempRecipes {
 
 	private static void AxeHead() {
 
-		GameRegistry.addShapedRecipe(new ItemStack(SAMWItem.AxeHead, 1), new Object[]{ " xx", "  X", "   ", 'x', SAMWItem.AdamantiumIngot });
+		GameRegistry.addShapedRecipe(new ItemStack(SAMWItem.AxeHead, 1), new Object[]{ " xx", "  X", "   ", 'x', SAMWItem.ingots.get("Adamantium Ingot") });
 		
 	}
 

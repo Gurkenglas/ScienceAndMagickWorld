@@ -23,14 +23,16 @@ public class PinkWater extends FluidSAMW {
 	public int colorMultiplier(IBlockAccess iblockaccess, int x, int y, int z){
 		return 0xFF00FF;
 	}
-	public static String getSAMWName() {
-		return "PinkWater";
-	}
+	
 	public void setFluidProperties() {
 		setDensity(300);
 		setViscosity(100);
 		setTemperature(400);
 		setLuminosity(15);
+	}
+
+	public String getSAMWName() {
+		return "PinkWater";
 	}
 
 	// Copypaste into each Fluid until 1.7's ID update

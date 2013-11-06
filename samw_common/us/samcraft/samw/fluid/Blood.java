@@ -35,6 +35,11 @@ public class Blood extends FluidSAMW {
 		setLuminosity(10);
 	}
 
+	@Override
+	public String getSAMWName() {
+		return "Blood";
+	}
+
 	// Copypaste into each Fluid until 1.7's ID update
 	public static int fluidblockid;
 

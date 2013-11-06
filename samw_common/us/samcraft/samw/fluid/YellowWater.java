@@ -31,6 +31,11 @@ public class YellowWater extends FluidSAMW {
 		setTemperature(400);
 		setLuminosity(15);
 	}
+	
+	@Override
+	public String getSAMWName() {
+		return "Charged Water";
+	}
 
 	// Copypaste into each Fluid until 1.7's ID update
 	public static int fluidblockid;

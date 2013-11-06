@@ -1,12 +1,7 @@
  package us.samcraft.samw.worldgen.ores;
 
 import java.util.Random;
-import java.util.logging.Level;
-
 import us.samcraft.samw.block.SAMWBlock;
-import us.samcraft.samw.configuration.ConfigurationSettings;
-import us.samcraft.samw.core.handler.LogHelper;
-
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
@@ -47,7 +42,7 @@ public class CommonOreGen implements IWorldGenerator {
 				int BlockOreY = random.nextInt(50);
 				int BlockOreZ = chunkZ + random.nextInt(16);
 				
-				(new WorldGenMinable(SAMWBlock.oreCopper.blockID, 5)).generate(world, random, BlockOreX, BlockOreY, BlockOreZ);
+				(new WorldGenMinable(SAMWBlock.ores.get("Copper Ore").blockID, 5)).generate(world, random, BlockOreX, BlockOreY, BlockOreZ);
 			}
 					
 			
@@ -56,7 +51,7 @@ public class CommonOreGen implements IWorldGenerator {
 				int BlockOreY = random.nextInt(50);
 				int BlockOreZ = chunkZ + random.nextInt(16);
 				
-				(new WorldGenMinable(SAMWBlock.oreSiliver.blockID, 5)).generate(world, random, BlockOreX, BlockOreY, BlockOreZ);
+				(new WorldGenMinable(SAMWBlock.ores.get("Silver Ore").blockID, 5)).generate(world, random, BlockOreX, BlockOreY, BlockOreZ);
 			}
 			
 			for (int i = 0; i < 156; i++){
@@ -64,7 +59,7 @@ public class CommonOreGen implements IWorldGenerator {
 				int BlockOreY = random.nextInt(50);
 				int BlockOreZ = chunkZ + random.nextInt(16);
 				
-				(new WorldGenMinable(SAMWBlock.oreTin.blockID, 5)).generate(world, random, BlockOreX, BlockOreY, BlockOreZ);
+				(new WorldGenMinable(SAMWBlock.ores.get("Tin Ore").blockID, 5)).generate(world, random, BlockOreX, BlockOreY, BlockOreZ);
 			}
 			
 	}

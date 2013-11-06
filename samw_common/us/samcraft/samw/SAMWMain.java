@@ -55,8 +55,8 @@ public class SAMWMain {
 		LanguageRegistry.instance().addStringLocalization("itemGroup." + SAMWReference.MOD_NAME + " Blocks", "en_US", SAMWReference.MOD_NAME + " Blocks");
 		LanguageRegistry.instance().addStringLocalization("itemGroup." + SAMWReference.MOD_NAME + " Items", "en_US", SAMWReference.MOD_NAME + " Items");
 		
-		SAMWBlock.init();
 		SAMWItem.init();
+		SAMWBlock.init();
 		SAMWFluid.init();
 		SAMWCrafting.init();
 		SAMWTool.init();

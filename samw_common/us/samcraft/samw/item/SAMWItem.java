@@ -1,34 +1,24 @@
 package us.samcraft.samw.item;
 
+import java.util.HashMap;
+
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import us.samcraft.samw.item.ingot.ItemAdamantiumIngot;
-import us.samcraft.samw.item.ingot.ItemBronzeIngot;
-import us.samcraft.samw.item.ingot.ItemCopperIngot;
-import us.samcraft.samw.item.ingot.ItemManaIngot;
-import us.samcraft.samw.item.ingot.ItemMithrilIngot;
-import us.samcraft.samw.item.ingot.ItemOrichalcumIngot;
-import us.samcraft.samw.item.ingot.ItemRuneIngot;
-import us.samcraft.samw.item.ingot.ItemSiliconIngot;
-import us.samcraft.samw.item.ingot.ItemSilverIngot;
-import us.samcraft.samw.item.ingot.ItemStarSteelIngot;
-import us.samcraft.samw.item.ingot.ItemSteelIngot;
-import us.samcraft.samw.item.ingot.ItemTinIngot;
-import us.samcraft.samw.item.ingot.ItemTitaniumIngot;
 import us.samcraft.samw.item.part.ItemAxeHead;
 import us.samcraft.samw.item.part.ItemBlade;
 import us.samcraft.samw.item.part.ItemMold;
 import us.samcraft.samw.item.part.ItemPickAxeHead;
 import us.samcraft.samw.item.part.ItemShovelHead;
 import us.samcraft.samw.item.part.ItemSimpleTool;
+import us.samcraft.samw.lib.id.SAMWBlockID;
 import us.samcraft.samw.lib.id.SAMWItemID;
 import us.samcraft.samw.lib.names.SAMWINames;
-import cpw.mods.fml.common.registry.GameRegistry;
+import us.samcraft.samw.lib.textures.ModBlockIcons;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 /**
  * @author Anthony Anderson(LordIlloyhs)
- *
+ * 
  */
 public class SAMWItem {
 
@@ -41,112 +31,71 @@ public class SAMWItem {
 	public static Item ShovelHead;
 	public static Item Simptool;
 
-	public static Item AdamantiumIngot;
-	public static Item BronzeIngot;
-	public static Item CopperIngot;
-	public static Item ManaIngot;
-	public static Item MithrilIngot;
-	public static Item OrichalcumIngot;
-	public static Item RuneIngot;
-	public static Item SiliconIngot;
-	public static Item SilverIngot;
-	public static Item StarSteelIngot;
-	public static Item SteelIngot;
-	public static Item TinIngot;
-	public static Item TitaniumIngot;
+	public static HashMap<String,Ingot> ingots = new HashMap<String,Ingot>( );
 
 	public static void init() {
 
-		/*meta Items*/
-		Gem = new ItemGem(SAMWItemID.GEM);
-		Mold = new ItemMold(SAMWItemID.MOLD);
-		Blade = new ItemBlade(SAMWItemID.BLADE);
-		Simptool = new ItemSimpleTool(SAMWItemID.SIMPTOOL);
-		AxeHead = new ItemAxeHead(SAMWItemID.AXEHEAD);
-		PickaxeHead = new ItemPickAxeHead(SAMWItemID.PICKAXEHEAD);
-		ShovelHead = new ItemShovelHead(SAMWItemID.SHOVELHEAD);
-		
-		/*Regular items*/
-		AdamantiumIngot = new ItemAdamantiumIngot(SAMWItemID.ADAMANTIUM_INGOT);
-		BronzeIngot = new ItemBronzeIngot(SAMWItemID.BRONZE_INGOT);
-		CopperIngot = new ItemCopperIngot(SAMWItemID.COPPER_INGOT);
-		ManaIngot = new ItemManaIngot(SAMWItemID.MANA_INGOT);
-		MithrilIngot = new ItemMithrilIngot(SAMWItemID.MITHRIL_INGOT);
-		OrichalcumIngot = new ItemOrichalcumIngot(SAMWItemID.ORICHALCUM_INGOT);
-		RuneIngot = new ItemRuneIngot(SAMWItemID.RUNE_INGOT);
-		SiliconIngot = new ItemSiliconIngot(SAMWItemID.SILICON_INGOT);
-		SilverIngot = new ItemSilverIngot(SAMWItemID.SILVER_INGOT);
-		StarSteelIngot = new ItemStarSteelIngot(SAMWItemID.STARSTEEL_INGOT);
-		SteelIngot = new ItemSteelIngot(SAMWItemID.STEEL_INGOT);
-		TinIngot = new ItemTinIngot(SAMWItemID.TIN_INGOT);
-		TitaniumIngot = new ItemTitaniumIngot(SAMWItemID.TITANIUM_INGOT);
+		/* meta Items */
+		Gem = new ItemGem(SAMWItemID.GEM );
+		Mold = new ItemMold(SAMWItemID.MOLD );
+		Blade = new ItemBlade(SAMWItemID.BLADE );
+		Simptool = new ItemSimpleTool(SAMWItemID.SIMPTOOL );
+		AxeHead = new ItemAxeHead(SAMWItemID.AXEHEAD );
+		PickaxeHead = new ItemPickAxeHead(SAMWItemID.PICKAXEHEAD );
+		ShovelHead = new ItemShovelHead(SAMWItemID.SHOVELHEAD );
 
+		/* Regular items */
+		new Ingot(SAMWItemID.ADAMANTIUM_INGOT, "Adamantium Ingot" , ""         , ""           , SAMWBlockID.ADAMANTIUM_ORE , "Adamantium Ore",  10F, ModBlockIcons.oreAdamantium , 0.7F);
+		new Ingot(SAMWItemID.COPPER_INGOT,     "Copper Ingot"     , ""         , "oreCopper"  , SAMWBlockID.COPPER_ORE     , "Copper Ore"    ,  3F,  ModBlockIcons.oreCopper     , 0.3F);
+		new Ingot(SAMWItemID.MITHRIL_INGOT,    "Mithril Ingot"    , ""         , ""           , SAMWBlockID.MITHRIL_ORE    , "Mithril Ore"   ,  8F,  ModBlockIcons.oreMithril    , 0.6F);
+		new Ingot(SAMWItemID.ORICHALCUM_INGOT, "Orichalcum Ingot" , ""         , ""           , SAMWBlockID.ORICHALCUM_ORE , "Orichalcum Ore",  7F,  ModBlockIcons.oreOrichalcum , 0.9F);
+		new Ingot(SAMWItemID.RUNE_INGOT,       "Rune Ingot"       , ""         , ""           , SAMWBlockID.RUNE_ORE       , "Rune Ore"      ,  9F,  ModBlockIcons.oreRune       , 0.7F);
+		new Ingot(SAMWItemID.SILICON_INGOT,    "Silicon Ingot"    , ""         , "oreSilicon" , SAMWBlockID.SILICON_ORE    , "Silicon Ore"   ,  4F,  ModBlockIcons.oreSilicon    , 0.4F);
+		new Ingot(SAMWItemID.SILVER_INGOT,     "Silver Ingot"     , ""         , "oreSilver"  , SAMWBlockID.SILVER_ORE     , "Silver Ore"    ,  4F,  ModBlockIcons.oreSilver     , 0.5F);
+		new Ingot(SAMWItemID.TIN_INGOT,        "Tin Ingot"        , ""         , "oreTin"     , SAMWBlockID.TIN_ORE        , "Tin Ore"       ,  4F,  ModBlockIcons.oreTin        , 0.3F);
+		new Ingot(SAMWItemID.TITANIUM_INGOT,   "Titanium Ingot"   , ""         , "oreTitanium", SAMWBlockID.TITANIUM_ORE   , "Titanium Ore"  ,  7F,  ModBlockIcons.oreTitanium   , 0.9F);
+		new Ingot(SAMWItemID.BRONZE_INGOT,     "BronzeIngot"      , ""         );      
+		new Ingot(SAMWItemID.MANA_INGOT,       "ManaIngot"        , ""         );          
+		new Ingot(SAMWItemID.STARSTEEL_INGOT,  "StarSteelIngot"   , ""         );
+		new Ingot(SAMWItemID.STEEL_INGOT,      "SteelIngot"       , ""         );        
 		MetaItems();
-		LanguageReg();
-		GameReg();
-		
-	}
-
-	private static void GameReg() {
-		GameRegistry.registerItem(AdamantiumIngot, SAMWINames.AdamantiumIngot);
-		GameRegistry.registerItem(BronzeIngot, SAMWINames.BronzeIngot);
-		GameRegistry.registerItem(CopperIngot, SAMWINames.CopperIngot);
-		GameRegistry.registerItem(ManaIngot, SAMWINames.ManaIngot);
-		GameRegistry.registerItem(MithrilIngot, SAMWINames.MithrilIngot);
-		GameRegistry.registerItem(RuneIngot, SAMWINames.RuneIngot);
-		GameRegistry.registerItem(SiliconIngot, SAMWINames.SiliconIngot);
-		GameRegistry.registerItem(SilverIngot, SAMWINames.SiliverIngot);
-		GameRegistry.registerItem(StarSteelIngot, SAMWINames.StartSteelIngot);		
-		GameRegistry.registerItem(SteelIngot, SAMWINames.SteelIngot);
-		GameRegistry.registerItem(TitaniumIngot, SAMWINames.TitaniumIngot);
-		GameRegistry.registerItem(TinIngot, SAMWINames.TinIngot);
-
-	}
-
-	private static void LanguageReg() {
-		LanguageRegistry.addName(AdamantiumIngot, SAMWINames.AdamantiumIngot);
-		LanguageRegistry.addName(BronzeIngot, SAMWINames.BronzeIngot);
-		LanguageRegistry.addName(CopperIngot, SAMWINames.CopperIngot);
-		LanguageRegistry.addName(ManaIngot, SAMWINames.ManaIngot);
-		LanguageRegistry.addName(MithrilIngot, SAMWINames.MithrilIngot);
-		LanguageRegistry.addName(RuneIngot, SAMWINames.RuneIngot);
-		LanguageRegistry.addName(SiliconIngot, SAMWINames.SiliconIngot);
-		LanguageRegistry.addName(SilverIngot, SAMWINames.SiliverIngot);
-		LanguageRegistry.addName(StarSteelIngot, SAMWINames.StartSteelIngot);
-		LanguageRegistry.addName(SteelIngot, SAMWINames.SteelIngot);
-		LanguageRegistry.addName(TitaniumIngot, SAMWINames.TitaniumIngot);
-		LanguageRegistry.addName(TinIngot, SAMWINames.TinIngot);
-		
 	}
 
 	private static void MetaItems() {
 		/* Axe head */
-		 for(int i = 0; i < SAMWINames.AXEHEAD_META_NAME.length; i++){
-			 LanguageRegistry.addName(new ItemStack(AxeHead, 1, i),SAMWINames.AXEHEAD_META_NAME[i]);
-		 }
+		for (int i = 0; i < SAMWINames.AXEHEAD_META_NAME.length; i++) {
+			LanguageRegistry.addName(new ItemStack(AxeHead, 1, i),
+					SAMWINames.AXEHEAD_META_NAME[i] );
+		}
 		/* Pickaxe head */
-		for (int i = 0; i < SAMWINames.PAXEHEAD_META_NAME.length; i++){
-			LanguageRegistry.addName(new ItemStack(PickaxeHead, 1, i), SAMWINames.PAXEHEAD_META_NAME[i]);
+		for (int i = 0; i < SAMWINames.PAXEHEAD_META_NAME.length; i++) {
+			LanguageRegistry.addName(new ItemStack(PickaxeHead, 1, i),
+					SAMWINames.PAXEHEAD_META_NAME[i] );
 		}
 		/* Gems */
 		for (int i = 0; i < SAMWINames.GEM_META_NAME.length; i++) {
-			LanguageRegistry.addName(new ItemStack(Gem, 1, i), SAMWINames.GEM_META_NAME[i]);
+			LanguageRegistry.addName(new ItemStack(Gem, 1, i),
+					SAMWINames.GEM_META_NAME[i] );
 		}
 		/* Molds */
 		for (int i = 0; i < SAMWINames.MOLD_META_NAME.length; i++) {
-			LanguageRegistry.addName(new ItemStack(Mold, 1, i), SAMWINames.MOLD_META_NAME[i]);
+			LanguageRegistry.addName(new ItemStack(Mold, 1, i),
+					SAMWINames.MOLD_META_NAME[i] );
 		}
 		/* Blade */
 		for (int i = 0; i < SAMWINames.BLADE_META_NAME.length; i++) {
-			LanguageRegistry.addName(new ItemStack(Blade, 1, i), SAMWINames.BLADE_META_NAME[i]);
+			LanguageRegistry.addName(new ItemStack(Blade, 1, i),
+					SAMWINames.BLADE_META_NAME[i] );
 		}
 		/* Simple Tools */
 		for (int i = 0; i < SAMWINames.SIMPTOOL_META_NAME.length; i++) {
-			LanguageRegistry.addName(new ItemStack(Simptool, 1, i), SAMWINames.SIMPTOOL_META_NAME[i]);
+			LanguageRegistry.addName(new ItemStack(Simptool, 1, i),
+					SAMWINames.SIMPTOOL_META_NAME[i] );
 		}
-		/* Shovel Head*/
-		for (int i = 0; i < SAMWINames.SHOVHEAD_META_NAME.length; i++){
-			LanguageRegistry.addName(new ItemStack(ShovelHead, 1, i), SAMWINames.SHOVHEAD_META_NAME[i]);
+		/* Shovel Head */
+		for (int i = 0; i < SAMWINames.SHOVHEAD_META_NAME.length; i++) {
+			LanguageRegistry.addName(new ItemStack(ShovelHead, 1, i),
+					SAMWINames.SHOVHEAD_META_NAME[i] );
 		}
 
 	}

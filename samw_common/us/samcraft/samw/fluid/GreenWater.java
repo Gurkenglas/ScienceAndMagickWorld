@@ -30,6 +30,11 @@ public class GreenWater extends FluidSAMW {
 		setTemperature(400);
 		setDensity(10);
 	}
+	
+	@Override
+	public String getSAMWName() {
+		return "Hungry Water";
+	}
 
 	// Copypaste into each Fluid until 1.7's ID update
 	public static int fluidblockid;

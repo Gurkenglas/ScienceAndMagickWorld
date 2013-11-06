@@ -22,6 +22,8 @@ public abstract class FluidSAMW extends Fluid {
 	
 	public abstract int colorMultiplier(IBlockAccess iblockaccess, int x, int y, int z);
 
+	public abstract String getSAMWName();
+	
 	public abstract int getFluidBlockID();
 	public static void setFluidBlockID(int id) {
 		throw new RuntimeException("Something tried to assign a FluidBlockID to FluidSAMW");

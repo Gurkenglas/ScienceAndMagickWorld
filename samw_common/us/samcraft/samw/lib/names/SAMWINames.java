@@ -37,20 +37,4 @@ public class SAMWINames {
 	
 	public static final String crysAetheriumshard = "Aetherium Crystle Shard";
 	public static final String crysMana ="Mana Crystle";
-	
-	/*Ingots*/
-	public static final String AdamantiumIngot = "Adamantium Ingot";
-	public static final String BronzeIngot = "Bronze Ingot";
-	public static final String CopperIngot = "Copper Ingot";
-	public static final String LeadIngot = "Lead Ingot";
-	public static final String ManaIngot = "Mana Ingot";
-	public static final String MithrilIngot = "Mithril Ingot";
-	public static final String OrichalcumIngot = "Orichalcum Ingot";
-	public static final String RuneIngot = "Rune Ingot";
-	public static final String SiliconIngot = "Silicon Ingot";
-	public static final String SiliverIngot = "Siliver Ingot";
-	public static final String StartSteelIngot = "StarSteel Ingot";
-	public static final String SteelIngot = "Steel Ingot";
-	public static final String TinIngot = "Tin Ingot";
-	public static final String TitaniumIngot = "Titanium Ingot";
 }

@@ -6,7 +6,7 @@ package us.samcraft.samw.lib.textures;
  */
 public class ModBlockIcons {
 	
-	private static final String ORE = "samw:ore/";
+	public static final String ORE = "samw:ore/";
 	private static final String TREE = "samw:tree/";
 	private static final String CLEAR = "samw:clearblock/";
 	private static final String FLUID = "samw:fluid/";

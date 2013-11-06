@@ -1,6 +1,5 @@
 package us.samcraft.samw.creativetab;
 
-import us.samcraft.samw.block.SAMWBlock;
 import us.samcraft.samw.item.SAMWItem;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -17,7 +16,7 @@ public class CreativeTabItem extends CreativeTabs {
 	}
 	@SideOnly(Side.CLIENT)
 	public int getTabIconItemIndex(){
-		return SAMWItem.OrichalcumIngot.itemID;
+		return SAMWItem.ingots.get("Orichalcum Ingot").itemID;
 	}
 
 }

@@ -17,7 +17,7 @@ public class CreativeTabWorld extends CreativeTabs{
 	}
 	@SideOnly(Side.CLIENT)
 	public int getTabIconItemIndex(){
-		return SAMWBlock.oreAdamantium.blockID;
+		return SAMWBlock.ores.get("Adamantium Ore").blockID;
 	}
 
 }
